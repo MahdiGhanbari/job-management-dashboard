@@ -1,0 +1,2044 @@
+{
+  "jobs": [
+    {
+      "id": 1,
+      "title": "Senior Frontend Developer",
+      "department": "Engineering",
+      "location": "Remote",
+      "jobType": "Full-time",
+      "status": "Active",
+      "postedAt": "2026-08-01"
+    },
+    {
+      "id": 2,
+      "title": "React Developer",
+      "department": "Engineering",
+      "location": "Tehran",
+      "jobType": "Full-time",
+      "status": "Active",
+      "postedAt": "2026-08-04"
+    },
+    {
+      "id": 3,
+      "title": "UI/UX Designer",
+      "department": "Design",
+      "location": "Tehran",
+      "jobType": "Full-time",
+      "status": "Active",
+      "postedAt": "2026-08-06"
+    },
+    {
+      "id": 4,
+      "title": "Backend Developer",
+      "department": "Engineering",
+      "location": "Remote",
+      "jobType": "Full-time",
+      "status": "Active",
+      "postedAt": "2026-08-08"
+    },
+    {
+      "id": 5,
+      "title": "Product Manager",
+      "department": "Product",
+      "location": "Tehran",
+      "jobType": "Full-time",
+      "status": "Active",
+      "postedAt": "2026-08-10"
+    },
+    {
+      "id": 6,
+      "title": "QA Engineer",
+      "department": "Engineering",
+      "location": "Karaj",
+      "jobType": "Full-time",
+      "status": "Active",
+      "postedAt": "2026-08-12"
+    },
+    {
+      "id": 7,
+      "title": "Mobile Developer",
+      "department": "Engineering",
+      "location": "Remote",
+      "jobType": "Full-time",
+      "status": "Closed",
+      "postedAt": "2026-07-15"
+    },
+    {
+      "id": 8,
+      "title": "DevOps Engineer",
+      "department": "Infrastructure",
+      "location": "Tehran",
+      "jobType": "Full-time",
+      "status": "Active",
+      "postedAt": "2026-08-16"
+    },
+    {
+      "id": 9,
+      "title": "Data Analyst",
+      "department": "Data",
+      "location": "Tehran",
+      "jobType": "Full-time",
+      "status": "Draft",
+      "postedAt": "2026-08-20"
+    },
+    {
+      "id": 10,
+      "title": "HR Specialist",
+      "department": "Human Resources",
+      "location": "Karaj",
+      "jobType": "Part-time",
+      "status": "Closed",
+      "postedAt": "2026-07-25"
+    },
+    {
+      "id": 11,
+      "title": "Technical Writer",
+      "department": "Product",
+      "location": "Remote",
+      "jobType": "Contract",
+      "status": "Active",
+      "postedAt": "2026-08-22"
+    },
+    {
+      "id": 12,
+      "title": "Marketing Specialist",
+      "department": "Marketing",
+      "location": "Tehran",
+      "jobType": "Full-time",
+      "status": "Closed",
+      "postedAt": "2026-07-28"
+    }
+  ],
+
+  "jobDetails": [
+    {
+      "id": 1,
+      "description": "We are looking for a Senior Frontend Developer to build scalable and high-performance web applications.",
+      "requirements": [
+        "5+ years of frontend development experience",
+        "Strong knowledge of JavaScript and TypeScript",
+        "Professional experience with React and Next.js",
+        "Experience with Tailwind CSS",
+        "Understanding of REST APIs"
+      ],
+      "responsibilities": [
+        "Build and maintain scalable web applications",
+        "Collaborate with designers and backend developers",
+        "Review code and improve application performance",
+        "Mentor junior developers"
+      ],
+      "experience": "5+ years",
+      "salaryRange": "$3,500 – $5,500",
+      "deadline": "2026-09-30",
+      "updatedAt": "2026-08-20",
+      "createdBy": "Sarah Johnson",
+      "notes": "Priority hiring for the frontend platform team.",
+      "pipeline": {
+        "applied": 1,
+        "screening": 1,
+        "interview": 2,
+        "offered": 0,
+        "hired": 0
+      },
+      "totalCandidates": 4,
+      "interviewsScheduled": 2,
+      "timeToHire": "28 days"
+    },
+    {
+      "id": 2,
+      "description": "Join our frontend team to develop modern React applications used by thousands of customers.",
+      "requirements": [
+        "2+ years of frontend development experience",
+        "Strong knowledge of React",
+        "Good understanding of TypeScript",
+        "Experience with Git and REST APIs"
+      ],
+      "responsibilities": [
+        "Develop reusable React components",
+        "Implement responsive interfaces",
+        "Integrate REST APIs",
+        "Write maintainable code"
+      ],
+      "experience": "2–4 years",
+      "salaryRange": "$1,800 – $3,000",
+      "deadline": "2026-09-25",
+      "updatedAt": "2026-08-18",
+      "createdBy": "Michael Brown",
+      "notes": "Looking for candidates who can start within one month.",
+      "pipeline": {
+        "applied": 1,
+        "screening": 2,
+        "interview": 1,
+        "offered": 0,
+        "hired": 0
+      },
+      "totalCandidates": 4,
+      "interviewsScheduled": 1,
+      "timeToHire": "24 days"
+    },
+    {
+      "id": 3,
+      "description": "We are looking for a creative UI/UX Designer to improve the experience of our digital products.",
+      "requirements": [
+        "3+ years of UI/UX experience",
+        "Advanced Figma skills",
+        "Experience with design systems",
+        "Strong understanding of UX principles"
+      ],
+      "responsibilities": [
+        "Design user interfaces",
+        "Create prototypes",
+        "Maintain design systems",
+        "Work closely with product teams"
+      ],
+      "experience": "3–5 years",
+      "salaryRange": "$1,500 – $2,500",
+      "deadline": "2026-09-28",
+      "updatedAt": "2026-08-21",
+      "createdBy": "Sarah Johnson",
+      "notes": "Portfolio is required.",
+      "pipeline": {
+        "applied": 1,
+        "screening": 0,
+        "interview": 1,
+        "offered": 0,
+        "hired": 0
+      },
+      "totalCandidates": 3,
+      "interviewsScheduled": 1,
+      "timeToHire": "30 days"
+    },
+    {
+      "id": 4,
+      "description": "Backend Developer responsible for building reliable APIs and scalable backend services.",
+      "requirements": [
+        "4+ years backend development",
+        "Node.js experience",
+        "REST API development",
+        "Database experience",
+        "Docker knowledge"
+      ],
+      "responsibilities": [
+        "Build backend services",
+        "Design REST APIs",
+        "Optimize database queries",
+        "Collaborate with frontend developers"
+      ],
+      "experience": "4+ years",
+      "salaryRange": "$3,000 – $5,000",
+      "deadline": "2026-09-27",
+      "updatedAt": "2026-08-22",
+      "createdBy": "David Wilson",
+      "notes": "Backend platform experience is preferred.",
+      "pipeline": {
+        "applied": 1,
+        "screening": 1,
+        "interview": 1,
+        "offered": 0,
+        "hired": 0
+      },
+      "totalCandidates": 4,
+      "interviewsScheduled": 1,
+      "timeToHire": "26 days"
+    },
+    {
+      "id": 5,
+      "description": "Product Manager responsible for defining product strategy and coordinating product development.",
+      "requirements": [
+        "4+ years product management",
+        "Agile experience",
+        "Strong communication skills",
+        "Product analytics experience"
+      ],
+      "responsibilities": [
+        "Define product roadmap",
+        "Work with engineering teams",
+        "Analyze product metrics",
+        "Coordinate stakeholders"
+      ],
+      "experience": "4+ years",
+      "salaryRange": "$3,000 – $4,800",
+      "deadline": "2026-09-29",
+      "updatedAt": "2026-08-23",
+      "createdBy": "Sarah Johnson",
+      "notes": "Experience in SaaS products is preferred.",
+      "pipeline": {
+        "applied": 1,
+        "screening": 0,
+        "interview": 1,
+        "offered": 1,
+        "hired": 0
+      },
+      "totalCandidates": 4,
+      "interviewsScheduled": 1,
+      "timeToHire": "32 days"
+    },
+    {
+      "id": 6,
+      "description": "QA Engineer responsible for maintaining software quality through manual and automated testing.",
+      "requirements": [
+        "2+ years QA experience",
+        "Cypress or Playwright",
+        "API testing",
+        "Bug tracking experience"
+      ],
+      "responsibilities": [
+        "Create test cases",
+        "Automate regression tests",
+        "Test REST APIs",
+        "Report and track bugs"
+      ],
+      "experience": "2–4 years",
+      "salaryRange": "$1,500 – $2,500",
+      "deadline": "2026-09-26",
+      "updatedAt": "2026-08-24",
+      "createdBy": "Michael Brown",
+      "notes": "Automation experience is highly preferred.",
+      "pipeline": {
+        "applied": 1,
+        "screening": 2,
+        "interview": 1,
+        "offered": 0,
+        "hired": 0
+      },
+      "totalCandidates": 4,
+      "interviewsScheduled": 2,
+      "timeToHire": "25 days"
+    },
+    {
+      "id": 7,
+      "description": "Mobile Developer responsible for developing and maintaining cross-platform mobile applications.",
+      "requirements": [
+        "3+ years mobile development",
+        "React Native",
+        "TypeScript",
+        "REST APIs"
+      ],
+      "responsibilities": [
+        "Develop mobile applications",
+        "Fix production issues",
+        "Integrate APIs",
+        "Improve application performance"
+      ],
+      "experience": "3+ years",
+      "salaryRange": "$2,500 – $4,000",
+      "deadline": "2026-08-20",
+      "updatedAt": "2026-08-15",
+      "createdBy": "David Wilson",
+      "notes": "Position is currently closed.",
+      "pipeline": {
+        "applied": 0,
+        "screening": 0,
+        "interview": 0,
+        "offered": 0,
+        "hired": 0
+      },
+      "totalCandidates": 0,
+      "interviewsScheduled": 0,
+      "timeToHire": "21 days"
+    },
+    {
+      "id": 8,
+      "description": "DevOps Engineer responsible for infrastructure, deployment automation and cloud environments.",
+      "requirements": [
+        "4+ years DevOps experience",
+        "Docker",
+        "Kubernetes",
+        "CI/CD",
+        "Cloud platforms"
+      ],
+      "responsibilities": [
+        "Maintain CI/CD pipelines",
+        "Manage cloud infrastructure",
+        "Monitor production systems",
+        "Improve deployment processes"
+      ],
+      "experience": "4+ years",
+      "salaryRange": "$3,000 – $5,200",
+      "deadline": "2026-09-30",
+      "updatedAt": "2026-08-24",
+      "createdBy": "John Smith",
+      "notes": "Kubernetes experience is required.",
+      "pipeline": {
+        "applied": 1,
+        "screening": 1,
+        "interview": 1,
+        "offered": 0,
+        "hired": 0
+      },
+      "totalCandidates": 3,
+      "interviewsScheduled": 1,
+      "timeToHire": "29 days"
+    },
+    {
+      "id": 9,
+      "description": "Data Analyst responsible for transforming business data into actionable insights.",
+      "requirements": [
+        "2+ years data analysis",
+        "SQL",
+        "Excel",
+        "Python",
+        "Data visualization"
+      ],
+      "responsibilities": [
+        "Analyze business data",
+        "Create reports",
+        "Build dashboards",
+        "Identify business trends"
+      ],
+      "experience": "2–4 years",
+      "salaryRange": "$1,800 – $3,000",
+      "deadline": "2026-10-05",
+      "updatedAt": "2026-08-25",
+      "createdBy": "Sarah Johnson",
+      "notes": "Position is still in draft.",
+      "pipeline": {
+        "applied": 0,
+        "screening": 0,
+        "interview": 0,
+        "offered": 0,
+        "hired": 0
+      },
+      "totalCandidates": 0,
+      "interviewsScheduled": 0,
+      "timeToHire": "30 days"
+    },
+    {
+      "id": 10,
+      "description": "HR Specialist responsible for recruitment and employee support activities.",
+      "requirements": [
+        "2+ years HR experience",
+        "Recruitment experience",
+        "Strong communication",
+        "HR systems"
+      ],
+      "responsibilities": [
+        "Manage recruitment processes",
+        "Coordinate interviews",
+        "Maintain employee records",
+        "Support HR operations"
+      ],
+      "experience": "2+ years",
+      "salaryRange": "$1,200 – $2,000",
+      "deadline": "2026-08-25",
+      "updatedAt": "2026-08-10",
+      "createdBy": "Michael Brown",
+      "notes": "Position is currently closed.",
+      "pipeline": {
+        "applied": 0,
+        "screening": 0,
+        "interview": 0,
+        "offered": 0,
+        "hired": 0
+      },
+      "totalCandidates": 0,
+      "interviewsScheduled": 0,
+      "timeToHire": "20 days"
+    },
+    {
+      "id": 11,
+      "description": "Technical Writer responsible for creating clear and useful technical documentation.",
+      "requirements": [
+        "3+ years technical writing",
+        "Strong English writing",
+        "API documentation",
+        "Markdown",
+        "Git"
+      ],
+      "responsibilities": [
+        "Write technical documentation",
+        "Document APIs",
+        "Maintain developer guides",
+        "Work with engineering teams"
+      ],
+      "experience": "3+ years",
+      "salaryRange": "$1,500 – $2,500",
+      "deadline": "2026-09-30",
+      "updatedAt": "2026-08-26",
+      "createdBy": "David Wilson",
+      "notes": "Technical background is preferred.",
+      "pipeline": {
+        "applied": 1,
+        "screening": 1,
+        "interview": 1,
+        "offered": 0,
+        "hired": 0
+      },
+      "totalCandidates": 3,
+      "interviewsScheduled": 1,
+      "timeToHire": "27 days"
+    },
+    {
+      "id": 12,
+      "description": "Marketing Specialist responsible for digital marketing campaigns and content strategy.",
+      "requirements": [
+        "2+ years marketing experience",
+        "Digital marketing",
+        "SEO",
+        "Analytics",
+        "Content strategy"
+      ],
+      "responsibilities": [
+        "Create marketing campaigns",
+        "Analyze campaign performance",
+        "Develop content strategies",
+        "Manage digital channels"
+      ],
+      "experience": "2–4 years",
+      "salaryRange": "$1,500 – $2,800",
+      "deadline": "2026-08-30",
+      "updatedAt": "2026-08-12",
+      "createdBy": "Sarah Johnson",
+      "notes": "Position is currently closed.",
+      "pipeline": {
+        "applied": 0,
+        "screening": 0,
+        "interview": 0,
+        "offered": 0,
+        "hired": 0
+      },
+      "totalCandidates": 0,
+      "interviewsScheduled": 0,
+      "timeToHire": "23 days"
+    }
+  ],
+
+  "candidates": [
+    {
+      "id": 1,
+      "name": "Ali Ahmadi",
+      "email": "ali.ahmadi@example.com",
+      "phone": "+98-912-1000001",
+      "location": "Tehran",
+      "jobId": 1,
+      "appliedAt": "2026-08-06",
+      "stage": "Interview"
+    },
+    {
+      "id": 2,
+      "name": "Sara Karimi",
+      "email": "sara.karimi@example.com",
+      "phone": "+98-912-1000002",
+      "location": "Tehran",
+      "jobId": 2,
+      "appliedAt": "2026-08-07",
+      "stage": "Screening"
+    },
+    {
+      "id": 3,
+      "name": "Reza Mohammadi",
+      "email": "reza.mohammadi@example.com",
+      "phone": "+98-912-1000003",
+      "location": "Karaj",
+      "jobId": 3,
+      "appliedAt": "2026-08-08",
+      "stage": "Interview"
+    },
+    {
+      "id": 4,
+      "name": "Neda Hosseini",
+      "email": "neda.hosseini@example.com",
+      "phone": "+98-912-1000004",
+      "location": "Tehran",
+      "jobId": 4,
+      "appliedAt": "2026-08-09",
+      "hiredAt": "2026-08-28",
+      "stage": "Hired"
+    },
+    {
+      "id": 5,
+      "name": "Amir Rahimi",
+      "email": "amir.rahimi@example.com",
+      "phone": "+98-912-1000005",
+      "location": "Tehran",
+      "jobId": 5,
+      "appliedAt": "2026-08-10",
+      "stage": "Rejected"
+    },
+    {
+      "id": 6,
+      "name": "Mina Ebrahimi",
+      "email": "mina.ebrahimi@example.com",
+      "phone": "+98-912-1000006",
+      "location": "Karaj",
+      "jobId": 6,
+      "appliedAt": "2026-08-11",
+      "stage": "Interview"
+    },
+    {
+      "id": 7,
+      "name": "Sina Jafari",
+      "email": "sina.jafari@example.com",
+      "phone": "+98-912-1000007",
+      "location": "Tehran",
+      "jobId": 8,
+      "appliedAt": "2026-08-12",
+      "stage": "Screening"
+    },
+    {
+      "id": 8,
+      "name": "Leila Moradi",
+      "email": "leila.moradi@example.com",
+      "phone": "+98-912-1000008",
+      "location": "Tehran",
+      "jobId": 11,
+      "appliedAt": "2026-08-13",
+      "stage": "Interview"
+    },
+    {
+      "id": 9,
+      "name": "Arman Nouri",
+      "email": "arman.nouri@example.com",
+      "phone": "+98-912-1000009",
+      "location": "Karaj",
+      "jobId": 1,
+      "appliedAt": "2026-08-14",
+      "stage": "Interview"
+    },
+    {
+      "id": 10,
+      "name": "Parisa Kazemi",
+      "email": "parisa.kazemi@example.com",
+      "phone": "+98-912-1000010",
+      "location": "Tehran",
+      "jobId": 2,
+      "appliedAt": "2026-08-15",
+      "stage": "Applied"
+    },
+    {
+      "id": 11,
+      "name": "Mehdi Rostami",
+      "email": "mehdi.rostami@example.com",
+      "phone": "+98-912-1000011",
+      "location": "Tehran",
+      "jobId": 3,
+      "appliedAt": "2026-08-16",
+      "stage": "Applied"
+    },
+    {
+      "id": 12,
+      "name": "Zahra Sadeghi",
+      "email": "zahra.sadeghi@example.com",
+      "phone": "+98-912-1000012",
+      "location": "Karaj",
+      "jobId": 4,
+      "appliedAt": "2026-08-17",
+      "stage": "Screening"
+    },
+    {
+      "id": 13,
+      "name": "Pouya Shirazi",
+      "email": "pouya.shirazi@example.com",
+      "phone": "+98-912-1000013",
+      "location": "Tehran",
+      "jobId": 5,
+      "appliedAt": "2026-08-18",
+      "stage": "Interview"
+    },
+    {
+      "id": 14,
+      "name": "Maryam Yousefi",
+      "email": "maryam.yousefi@example.com",
+      "phone": "+98-912-1000014",
+      "location": "Tehran",
+      "jobId": 6,
+      "appliedAt": "2026-08-19",
+       "hiredAt": "2026-08-30",
+      "stage": "Hired"
+    },
+    {
+      "id": 15,
+      "name": "Navid Hashemi",
+      "email": "navid.hashemi@example.com",
+      "phone": "+98-912-1000015",
+      "location": "Karaj",
+      "jobId": 8,
+      "appliedAt": "2026-08-20",
+      "stage": "Rejected"
+    },
+    {
+      "id": 16,
+      "name": "Elham Ghasemi",
+      "email": "elham.ghasemi@example.com",
+      "phone": "+98-912-1000016",
+      "location": "Tehran",
+      "jobId": 11,
+      "appliedAt": "2026-08-21",
+      "stage": "Applied"
+    },
+    {
+      "id": 17,
+      "name": "Kian Taheri",
+      "email": "kian.taheri@example.com",
+      "phone": "+98-912-1000017",
+      "location": "Tehran",
+      "jobId": 1,
+      "appliedAt": "2026-08-22",
+      "stage": "Screening"
+    },
+    {
+      "id": 18,
+      "name": "Shirin Amini",
+      "email": "shirin.amini@example.com",
+      "phone": "+98-912-1000018",
+      "location": "Karaj",
+      "jobId": 2,
+      "appliedAt": "2026-08-23",
+      "stage": "Interview"
+    },
+    {
+      "id": 19,
+      "name": "Omid Farhadi",
+      "email": "omid.farhadi@example.com",
+      "phone": "+98-912-1000019",
+      "location": "Tehran",
+      "jobId": 3,
+      "appliedAt": "2026-08-24",
+      "stage": "Applied"
+    },
+    {
+      "id": 20,
+      "name": "Nazanin Mousavi",
+      "email": "nazanin.mousavi@example.com",
+      "phone": "+98-912-1000020",
+      "location": "Tehran",
+      "jobId": 4,
+      "appliedAt": "2026-08-25",
+      "stage": "Rejected"
+    },
+    {
+      "id": 21,
+      "name": "Hamed Jalali",
+      "email": "hamed.jalali@example.com",
+      "phone": "+98-912-1000021",
+      "location": "Karaj",
+      "jobId": 5,
+      "appliedAt": "2026-08-26",
+      "stage": "Applied"
+    },
+    {
+      "id": 22,
+      "name": "Sahar Vahidi",
+      "email": "sahar.vahidi@example.com",
+      "phone": "+98-912-1000022",
+      "location": "Tehran",
+      "jobId": 6,
+      "appliedAt": "2026-08-27",
+      "stage": "Screening"
+    },
+    {
+      "id": 23,
+      "name": "Kasra Zarei",
+      "email": "kasra.zarei@example.com",
+      "phone": "+98-912-1000023",
+      "location": "Tehran",
+      "jobId": 8,
+      "appliedAt": "2026-08-28",
+      "stage": "Interview"
+    },
+    {
+      "id": 24,
+      "name": "Atefeh Salehi",
+      "email": "atefeh.salehi@example.com",
+      "phone": "+98-912-1000024",
+      "location": "Karaj",
+      "jobId": 11,
+      "appliedAt": "2026-08-29",
+       "hiredAt": "2026-09-04",
+      "stage": "Hired"
+    },
+    {
+      "id": 25,
+      "name": "Morteza Fazeli",
+      "email": "morteza.fazeli@example.com",
+      "phone": "+98-912-1000025",
+      "location": "Tehran",
+      "jobId": 1,
+      "appliedAt": "2026-08-30",
+      "stage": "Rejected"
+    },
+    {
+      "id": 26,
+      "name": "Yasmin Norouzi",
+      "email": "yasmin.norouzi@example.com",
+      "phone": "+98-912-1000026",
+      "location": "Tehran",
+      "jobId": 2,
+      "appliedAt": "2026-08-31",
+      "stage": "Applied"
+    },
+    {
+      "id": 27,
+      "name": "Farhad Bagheri",
+      "email": "farhad.bagheri@example.com",
+      "phone": "+98-912-1000027",
+      "location": "Karaj",
+      "jobId": 3,
+      "appliedAt": "2026-09-01",
+      "stage": "Screening"
+    },
+    {
+      "id": 28,
+      "name": "Roya Ramezani",
+      "email": "roya.ramezani@example.com",
+      "phone": "+98-912-1000028",
+      "location": "Tehran",
+      "jobId": 4,
+      "appliedAt": "2026-09-02",
+      "stage": "Interview"
+    },
+    {
+      "id": 29,
+      "name": "Milad Daryaei",
+      "email": "milad.daryaei@example.com",
+      "phone": "+98-912-1000029",
+      "location": "Tehran",
+      "jobId": 5,
+      "appliedAt": "2026-09-03",
+      "stage": "Applied"
+    },
+    {
+      "id": 30,
+      "name": "Samira Abbasi",
+      "email": "samira.abbasi@example.com",
+      "phone": "+98-912-1000030",
+      "location": "Karaj",
+      "jobId": 6,
+      "appliedAt": "2026-09-04",
+      "stage": "Rejected"
+    }
+  ],
+
+  "candidateDetails": [
+    {
+      "id": 1,
+      "name": "Ali Ahmadi",
+      "email": "ali.ahmadi@example.com",
+      "phone": "+98-912-1000001",
+      "location": "Tehran",
+      "tags": ["Experienced", "Recommended"],
+      "about": "Experienced frontend developer focused on scalable web applications.",
+      "experience": "6+ years",
+      "skills": ["JavaScript", "TypeScript", "React", "Next.js", "Tailwind CSS"],
+      "attachments": [
+        {
+          "name": "ali-ahmadi-resume.pdf",
+          "url": "/files/resumes/ali-ahmadi-resume.pdf",
+          "size": "850 KB"
+        }
+      ],
+      "jobId": 1,
+      "appliedFor": "Senior Frontend Developer",
+      "appliedAt": "2026-08-06",
+      "stage": "Interview",
+      "interviewRound": {
+        "current": 1,
+        "total": 2
+      },
+      "expectedSalary": "$3,900",
+      "notes": "Strong technical background.",
+      "status": "Active",
+      "activity": [
+        {
+          "date": "2026-08-06",
+          "action": "Application received",
+          "by": "System"
+        },
+        {
+          "date": "2026-08-20",
+          "action": "Moved to interview",
+          "by": "Sarah Johnson"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Sara Karimi",
+      "email": "sara.karimi@example.com",
+      "phone": "+98-912-1000002",
+      "location": "Tehran",
+      "tags": ["Professional"],
+      "about": "Frontend developer experienced in React applications.",
+      "experience": "3 years",
+      "skills": ["React", "TypeScript", "JavaScript", "CSS", "Git"],
+      "attachments": [
+        {
+          "name": "sara-karimi-resume.pdf",
+          "url": "/files/resumes/sara-karimi-resume.pdf",
+          "size": "920 KB"
+        }
+      ],
+      "jobId": 2,
+      "appliedFor": "React Developer",
+      "appliedAt": "2026-08-07",
+      "stage": "Screening",
+      "interviewRound": {
+        "current": 1,
+        "total": 2
+      },
+      "expectedSalary": "$2,400",
+      "notes": "Good React fundamentals.",
+      "status": "Active",
+      "activity": [
+        {
+          "date": "2026-08-07",
+          "action": "Application received",
+          "by": "System"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Reza Mohammadi",
+      "email": "reza.mohammadi@example.com",
+      "phone": "+98-912-1000003",
+      "location": "Karaj",
+      "tags": ["Experienced"],
+      "about": "UI/UX designer with a strong product design background.",
+      "experience": "5 years",
+      "skills": ["Figma", "UI/UX", "Prototyping", "Design Systems"],
+      "attachments": [
+        {
+          "name": "reza-mohammadi-resume.pdf",
+          "url": "/files/resumes/reza-mohammadi-resume.pdf",
+          "size": "780 KB"
+        }
+      ],
+      "jobId": 3,
+      "appliedFor": "UI/UX Designer",
+      "appliedAt": "2026-08-08",
+      "stage": "Interview",
+      "interviewRound": {
+        "current": 1,
+        "total": 2
+      },
+      "expectedSalary": "$2,200",
+      "notes": "Excellent portfolio.",
+      "status": "Active",
+      "activity": [
+        {
+          "date": "2026-08-08",
+          "action": "Application received",
+          "by": "System"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Neda Hosseini",
+      "email": "neda.hosseini@example.com",
+      "phone": "+98-912-1000004",
+      "location": "Tehran",
+      "tags": ["Recommended"],
+      "about": "Backend developer experienced in Node.js and API development.",
+      "experience": "6 years",
+      "skills": ["Node.js", "TypeScript", "REST API", "PostgreSQL", "Docker"],
+      "attachments": [
+        {
+          "name": "neda-hosseini-resume.pdf",
+          "url": "/files/resumes/neda-hosseini-resume.pdf",
+          "size": "810 KB"
+        }
+      ],
+      "jobId": 4,
+      "appliedFor": "Backend Developer",
+      "appliedAt": "2026-08-09",
+      "stage": "Hired",
+      "interviewRound": {
+        "current": 2,
+        "total": 2
+      },
+      "expectedSalary": "$4,000",
+      "notes": "Offer accepted.",
+      "status": "Active",
+      "activity": [
+        {
+          "date": "2026-08-09",
+          "action": "Application received",
+          "by": "System"
+        },
+        {
+          "date": "2026-08-30",
+          "action": "Candidate hired",
+          "by": "David Wilson"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Amir Rahimi",
+      "email": "amir.rahimi@example.com",
+      "phone": "+98-912-1000005",
+      "location": "Tehran",
+      "tags": ["Professional"],
+      "about": "Product manager with SaaS product experience.",
+      "experience": "5 years",
+      "skills": ["Product Management", "Agile", "Analytics", "Roadmapping"],
+      "attachments": [
+        {
+          "name": "amir-rahimi-resume.pdf",
+          "url": "/files/resumes/amir-rahimi-resume.pdf",
+          "size": "740 KB"
+        }
+      ],
+      "jobId": 5,
+      "appliedFor": "Product Manager",
+      "appliedAt": "2026-08-10",
+      "stage": "Rejected",
+      "expectedSalary": "$4,200",
+      "notes": "Experience did not match current requirements.",
+      "status": "Rejected",
+      "activity": [
+        {
+          "date": "2026-08-10",
+          "action": "Application received",
+          "by": "System"
+        },
+        {
+          "date": "2026-08-25",
+          "action": "Application rejected",
+          "by": "Sarah Johnson"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Mina Ebrahimi",
+      "email": "mina.ebrahimi@example.com",
+      "phone": "+98-912-1000006",
+      "location": "Karaj",
+      "tags": ["Experienced"],
+      "about": "QA engineer specialized in automated testing.",
+      "experience": "4 years",
+      "skills": ["Cypress", "Playwright", "API Testing", "JavaScript", "Git"],
+      "attachments": [
+        {
+          "name": "mina-ebrahimi-resume.pdf",
+          "url": "/files/resumes/mina-ebrahimi-resume.pdf",
+          "size": "690 KB"
+        }
+      ],
+      "jobId": 6,
+      "appliedFor": "QA Engineer",
+      "appliedAt": "2026-08-11",
+      "stage": "Interview",
+      "interviewRound": {
+        "current": 1,
+        "total": 2
+      },
+      "expectedSalary": "$2,100",
+      "notes": "Strong automation skills.",
+      "status": "Active",
+      "activity": [
+        {
+          "date": "2026-08-11",
+          "action": "Application received",
+          "by": "System"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Sina Jafari",
+      "email": "sina.jafari@example.com",
+      "phone": "+98-912-1000007",
+      "location": "Tehran",
+      "tags": ["Experienced"],
+      "about": "DevOps engineer with cloud and Kubernetes experience.",
+      "experience": "5 years",
+      "skills": ["Docker", "Kubernetes", "AWS", "CI/CD", "Linux"],
+      "attachments": [
+        {
+          "name": "sina-jafari-resume.pdf",
+          "url": "/files/resumes/sina-jafari-resume.pdf",
+          "size": "910 KB"
+        }
+      ],
+      "jobId": 8,
+      "appliedFor": "DevOps Engineer",
+      "appliedAt": "2026-08-12",
+      "stage": "Screening",
+      "expectedSalary": "$4,100",
+      "notes": "Cloud experience is promising.",
+      "status": "Active",
+      "activity": [
+        {
+          "date": "2026-08-12",
+          "action": "Application received",
+          "by": "System"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Leila Moradi",
+      "email": "leila.moradi@example.com",
+      "phone": "+98-912-1000008",
+      "location": "Tehran",
+      "tags": ["Professional"],
+      "about": "Technical writer experienced in developer documentation.",
+      "experience": "4 years",
+      "skills": ["Technical Writing", "Markdown", "API Documentation", "Git"],
+      "attachments": [
+        {
+          "name": "leila-moradi-resume.pdf",
+          "url": "/files/resumes/leila-moradi-resume.pdf",
+          "size": "650 KB"
+        }
+      ],
+      "jobId": 11,
+      "appliedFor": "Technical Writer",
+      "appliedAt": "2026-08-13",
+      "stage": "Interview",
+      "interviewRound": {
+        "current": 1,
+        "total": 2
+      },
+      "expectedSalary": "$2,100",
+      "notes": "Excellent documentation samples.",
+      "status": "Active",
+      "activity": [
+        {
+          "date": "2026-08-13",
+          "action": "Application received",
+          "by": "System"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Arman Nouri",
+      "email": "arman.nouri@example.com",
+      "phone": "+98-912-1000009",
+      "location": "Karaj",
+      "tags": ["Experienced"],
+      "about": "Senior frontend developer with strong React experience.",
+      "experience": "7 years",
+      "skills": ["React", "Next.js", "TypeScript", "JavaScript", "Tailwind CSS"],
+      "attachments": [
+        {
+          "name": "arman-nouri-resume.pdf",
+          "url": "/files/resumes/arman-nouri-resume.pdf",
+          "size": "860 KB"
+        }
+      ],
+      "jobId": 1,
+      "appliedFor": "Senior Frontend Developer",
+      "appliedAt": "2026-08-14",
+      "stage": "Interview",
+      "interviewRound": {
+        "current": 2,
+        "total": 2
+      },
+      "expectedSalary": "$4,500",
+      "notes": "Strong candidate for senior role.",
+      "status": "Active",
+      "activity": [
+        {
+          "date": "2026-08-14",
+          "action": "Application received",
+          "by": "System"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Parisa Kazemi",
+      "email": "parisa.kazemi@example.com",
+      "phone": "+98-912-1000010",
+      "location": "Tehran",
+      "tags": ["Professional"],
+      "about": "Frontend developer with React and TypeScript experience.",
+      "experience": "3 years",
+      "skills": ["React", "TypeScript", "CSS", "Git"],
+      "attachments": [
+        {
+          "name": "parisa-kazemi-resume.pdf",
+          "url": "/files/resumes/parisa-kazemi-resume.pdf",
+          "size": "720 KB"
+        }
+      ],
+      "jobId": 2,
+      "appliedFor": "React Developer",
+      "appliedAt": "2026-08-15",
+      "stage": "Applied",
+      "expectedSalary": "$2,300",
+      "notes": "Application awaiting review.",
+      "status": "Active",
+      "activity": [
+        {
+          "date": "2026-08-15",
+          "action": "Application received",
+          "by": "System"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Mehdi Rostami",
+      "email": "mehdi.rostami@example.com",
+      "phone": "+98-912-1000011",
+      "location": "Tehran",
+      "tags": ["Professional"],
+      "about": "Product designer with experience in digital products.",
+      "experience": "4 years",
+      "skills": ["Figma", "UI/UX", "Prototyping", "User Research"],
+      "attachments": [
+        {
+          "name": "mehdi-rostami-resume.pdf",
+          "url": "/files/resumes/mehdi-rostami-resume.pdf",
+          "size": "760 KB"
+        }
+      ],
+      "jobId": 3,
+      "appliedFor": "UI/UX Designer",
+      "appliedAt": "2026-08-16",
+      "stage": "Applied",
+      "expectedSalary": "$2,000",
+      "notes": "Portfolio pending review.",
+      "status": "Active",
+      "activity": [
+        {
+          "date": "2026-08-16",
+          "action": "Application received",
+          "by": "System"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Zahra Sadeghi",
+      "email": "zahra.sadeghi@example.com",
+      "phone": "+98-912-1000012",
+      "location": "Karaj",
+      "tags": ["Experienced"],
+      "about": "Backend developer with Node.js and PostgreSQL experience.",
+      "experience": "5 years",
+      "skills": ["Node.js", "PostgreSQL", "REST API", "Docker"],
+      "attachments": [
+        {
+          "name": "zahra-sadeghi-resume.pdf",
+          "url": "/files/resumes/zahra-sadeghi-resume.pdf",
+          "size": "800 KB"
+        }
+      ],
+      "jobId": 4,
+      "appliedFor": "Backend Developer",
+      "appliedAt": "2026-08-17",
+      "stage": "Screening",
+      "expectedSalary": "$3,700",
+      "notes": "Technical screening in progress.",
+      "status": "Active",
+      "activity": [
+        {
+          "date": "2026-08-17",
+          "action": "Application received",
+          "by": "System"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Pouya Shirazi",
+      "email": "pouya.shirazi@example.com",
+      "phone": "+98-912-1000013",
+      "location": "Tehran",
+      "tags": ["Recommended"],
+      "about": "Product manager experienced in SaaS products.",
+      "experience": "6 years",
+      "skills": ["Product Management", "Agile", "Analytics", "Roadmapping"],
+      "attachments": [
+        {
+          "name": "pouya-shirazi-resume.pdf",
+          "url": "/files/resumes/pouya-shirazi-resume.pdf",
+          "size": "770 KB"
+        }
+      ],
+      "jobId": 5,
+      "appliedFor": "Product Manager",
+      "appliedAt": "2026-08-18",
+      "stage": "Interview",
+      "interviewRound": {
+        "current": 1,
+        "total": 2
+      },
+      "expectedSalary": "$4,000",
+      "notes": "Strong product background.",
+      "status": "Active",
+      "activity": [
+        {
+          "date": "2026-08-18",
+          "action": "Application received",
+          "by": "System"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Maryam Yousefi",
+      "email": "maryam.yousefi@example.com",
+      "phone": "+98-912-1000014",
+      "location": "Tehran",
+      "tags": ["Experienced"],
+      "about": "QA engineer focused on automation and API testing.",
+      "experience": "5 years",
+      "skills": ["Cypress", "API Testing", "JavaScript", "Playwright"],
+      "attachments": [
+        {
+          "name": "maryam-yousefi-resume.pdf",
+          "url": "/files/resumes/maryam-yousefi-resume.pdf",
+          "size": "690 KB"
+        }
+      ],
+      "jobId": 6,
+      "appliedFor": "QA Engineer",
+      "appliedAt": "2026-08-19",
+      "stage": "Hired",
+      "interviewRound": {
+        "current": 2,
+        "total": 2
+      },
+      "expectedSalary": "$2,300",
+      "notes": "Offer accepted.",
+      "status": "Active",
+      "activity": [
+        {
+          "date": "2026-08-19",
+          "action": "Application received",
+          "by": "System"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Navid Hashemi",
+      "email": "navid.hashemi@example.com",
+      "phone": "+98-912-1000015",
+      "location": "Karaj",
+      "tags": ["Professional"],
+      "about": "DevOps engineer with infrastructure experience.",
+      "experience": "5 years",
+      "skills": ["Docker", "Kubernetes", "Linux", "CI/CD"],
+      "attachments": [
+        {
+          "name": "navid-hashemi-resume.pdf",
+          "url": "/files/resumes/navid-hashemi-resume.pdf",
+          "size": "830 KB"
+        }
+      ],
+      "jobId": 8,
+      "appliedFor": "DevOps Engineer",
+      "appliedAt": "2026-08-20",
+      "stage": "Rejected",
+      "expectedSalary": "$3,800",
+      "notes": "Cloud experience was insufficient.",
+      "status": "Rejected",
+      "activity": [
+        {
+          "date": "2026-08-20",
+          "action": "Application received",
+          "by": "System"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Elham Ghasemi",
+      "email": "elham.ghasemi@example.com",
+      "phone": "+98-912-1000016",
+      "location": "Tehran",
+      "tags": ["Professional"],
+      "about": "Technical writer experienced in API and developer documentation.",
+      "experience": "3 years",
+      "skills": ["Technical Writing", "Markdown", "Git", "API Documentation"],
+      "attachments": [
+        {
+          "name": "elham-ghasemi-resume.pdf",
+          "url": "/files/resumes/elham-ghasemi-resume.pdf",
+          "size": "640 KB"
+        }
+      ],
+      "jobId": 11,
+      "appliedFor": "Technical Writer",
+      "appliedAt": "2026-08-21",
+      "stage": "Applied",
+      "expectedSalary": "$1,900",
+      "notes": "Application awaiting review.",
+      "status": "Active",
+      "activity": [
+        {
+          "date": "2026-08-21",
+          "action": "Application received",
+          "by": "System"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Kian Taheri",
+      "email": "kian.taheri@example.com",
+      "phone": "+98-912-1000017",
+      "location": "Tehran",
+      "tags": ["Experienced"],
+      "about": "Frontend developer experienced in modern React applications.",
+      "experience": "5 years",
+      "skills": ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+      "attachments": [
+        {
+          "name": "kian-taheri-resume.pdf",
+          "url": "/files/resumes/kian-taheri-resume.pdf",
+          "size": "850 KB"
+        }
+      ],
+      "jobId": 1,
+      "appliedFor": "Senior Frontend Developer",
+      "appliedAt": "2026-08-22",
+      "stage": "Screening",
+      "expectedSalary": "$4,000",
+      "notes": "Technical screening pending.",
+      "status": "Active",
+      "activity": [
+        {
+          "date": "2026-08-22",
+          "action": "Application received",
+          "by": "System"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Shirin Amini",
+      "email": "shirin.amini@example.com",
+      "phone": "+98-912-1000018",
+      "location": "Karaj",
+      "tags": ["Recommended"],
+      "about": "React developer with strong TypeScript experience.",
+      "experience": "4 years",
+      "skills": ["React", "TypeScript", "JavaScript", "Testing"],
+      "attachments": [
+        {
+          "name": "shirin-amini-resume.pdf",
+          "url": "/files/resumes/shirin-amini-resume.pdf",
+          "size": "790 KB"
+        }
+      ],
+      "jobId": 2,
+      "appliedFor": "React Developer",
+      "appliedAt": "2026-08-23",
+      "stage": "Interview",
+      "interviewRound": {
+        "current": 1,
+        "total": 2
+      },
+      "expectedSalary": "$2,700",
+      "notes": "Strong React candidate.",
+      "status": "Active",
+      "activity": [
+        {
+          "date": "2026-08-23",
+          "action": "Application received",
+          "by": "System"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Omid Farhadi",
+      "email": "omid.farhadi@example.com",
+      "phone": "+98-912-1000019",
+      "location": "Tehran",
+      "tags": ["Professional"],
+      "about": "UI/UX designer with strong prototyping skills.",
+      "experience": "4 years",
+      "skills": ["Figma", "UI/UX", "Prototyping", "User Research"],
+      "attachments": [
+        {
+          "name": "omid-farhadi-resume.pdf",
+          "url": "/files/resumes/omid-farhadi-resume.pdf",
+          "size": "730 KB"
+        }
+      ],
+      "jobId": 3,
+      "appliedFor": "UI/UX Designer",
+      "appliedAt": "2026-08-24",
+      "stage": "Applied",
+      "expectedSalary": "$2,100",
+      "notes": "Portfolio awaiting review.",
+      "status": "Active",
+      "activity": [
+        {
+          "date": "2026-08-24",
+          "action": "Application received",
+          "by": "System"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Nazanin Mousavi",
+      "email": "nazanin.mousavi@example.com",
+      "phone": "+98-912-1000020",
+      "location": "Tehran",
+      "tags": ["Professional"],
+      "about": "Backend developer experienced in API development.",
+      "experience": "3 years",
+      "skills": ["Node.js", "REST API", "PostgreSQL", "Git"],
+      "attachments": [
+        {
+          "name": "nazanin-mousavi-resume.pdf",
+          "url": "/files/resumes/nazanin-mousavi-resume.pdf",
+          "size": "710 KB"
+        }
+      ],
+      "jobId": 4,
+      "appliedFor": "Backend Developer",
+      "appliedAt": "2026-08-25",
+      "stage": "Rejected",
+      "expectedSalary": "$3,200",
+      "notes": "Experience level was below requirement.",
+      "status": "Rejected",
+      "activity": [
+        {
+          "date": "2026-08-25",
+          "action": "Application received",
+          "by": "System"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Hamed Jalali",
+      "email": "hamed.jalali@example.com",
+      "phone": "+98-912-1000021",
+      "location": "Karaj",
+      "tags": ["Professional"],
+      "about": "Product manager with experience in agile teams.",
+      "experience": "4 years",
+      "skills": ["Product Management", "Agile", "Analytics", "Roadmapping"],
+      "attachments": [
+        {
+          "name": "hamed-jalali-resume.pdf",
+          "url": "/files/resumes/hamed-jalali-resume.pdf",
+          "size": "760 KB"
+        }
+      ],
+      "jobId": 5,
+      "appliedFor": "Product Manager",
+      "appliedAt": "2026-08-26",
+      "stage": "Applied",
+      "expectedSalary": "$3,500",
+      "notes": "Application awaiting review.",
+      "status": "Active",
+      "activity": [
+        {
+          "date": "2026-08-26",
+          "action": "Application received",
+          "by": "System"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Sahar Vahidi",
+      "email": "sahar.vahidi@example.com",
+      "phone": "+98-912-1000022",
+      "location": "Tehran",
+      "tags": ["Experienced"],
+      "about": "QA engineer experienced in automated testing.",
+      "experience": "4 years",
+      "skills": ["Cypress", "Playwright", "API Testing", "JavaScript"],
+      "attachments": [
+        {
+          "name": "sahar-vahidi-resume.pdf",
+          "url": "/files/resumes/sahar-vahidi-resume.pdf",
+          "size": "680 KB"
+        }
+      ],
+      "jobId": 6,
+      "appliedFor": "QA Engineer",
+      "appliedAt": "2026-08-27",
+      "stage": "Screening",
+      "expectedSalary": "$2,200",
+      "notes": "Technical screening in progress.",
+      "status": "Active",
+      "activity": [
+        {
+          "date": "2026-08-27",
+          "action": "Application received",
+          "by": "System"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Kasra Zarei",
+      "email": "kasra.zarei@example.com",
+      "phone": "+98-912-1000023",
+      "location": "Tehran",
+      "tags": ["Experienced"],
+      "about": "DevOps engineer specialized in Kubernetes.",
+      "experience": "6 years",
+      "skills": ["Kubernetes", "Docker", "AWS", "Linux", "CI/CD"],
+      "attachments": [
+        {
+          "name": "kasra-zarei-resume.pdf",
+          "url": "/files/resumes/kasra-zarei-resume.pdf",
+          "size": "890 KB"
+        }
+      ],
+      "jobId": 8,
+      "appliedFor": "DevOps Engineer",
+      "appliedAt": "2026-08-28",
+      "stage": "Interview",
+      "interviewRound": {
+        "current": 1,
+        "total": 2
+      },
+      "expectedSalary": "$4,300",
+      "notes": "Excellent infrastructure background.",
+      "status": "Active",
+      "activity": [
+        {
+          "date": "2026-08-28",
+          "action": "Application received",
+          "by": "System"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Atefeh Salehi",
+      "email": "atefeh.salehi@example.com",
+      "phone": "+98-912-1000024",
+      "location": "Karaj",
+      "tags": ["Recommended"],
+      "about": "Technical writer with engineering background.",
+      "experience": "5 years",
+      "skills": ["Technical Writing", "API Documentation", "Git", "Markdown"],
+      "attachments": [
+        {
+          "name": "atefeh-salehi-resume.pdf",
+          "url": "/files/resumes/atefeh-salehi-resume.pdf",
+          "size": "700 KB"
+        }
+      ],
+      "jobId": 11,
+      "appliedFor": "Technical Writer",
+      "appliedAt": "2026-08-29",
+      "stage": "Hired",
+      "interviewRound": {
+        "current": 2,
+        "total": 2
+      },
+      "expectedSalary": "$2,300",
+      "notes": "Offer accepted.",
+      "status": "Active",
+      "activity": [
+        {
+          "date": "2026-08-29",
+          "action": "Application received",
+          "by": "System"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Morteza Fazeli",
+      "email": "morteza.fazeli@example.com",
+      "phone": "+98-912-1000025",
+      "location": "Tehran",
+      "tags": ["Professional"],
+      "about": "Frontend developer with modern JavaScript experience.",
+      "experience": "5 years",
+      "skills": ["JavaScript", "React", "TypeScript", "CSS"],
+      "attachments": [
+        {
+          "name": "morteza-fazeli-resume.pdf",
+          "url": "/files/resumes/morteza-fazeli-resume.pdf",
+          "size": "740 KB"
+        }
+      ],
+      "jobId": 1,
+      "appliedFor": "Senior Frontend Developer",
+      "appliedAt": "2026-08-30",
+      "stage": "Rejected",
+      "expectedSalary": "$3,600",
+      "notes": "Senior-level requirements were not met.",
+      "status": "Rejected",
+      "activity": [
+        {
+          "date": "2026-08-30",
+          "action": "Application received",
+          "by": "System"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Yasmin Norouzi",
+      "email": "yasmin.norouzi@example.com",
+      "phone": "+98-912-1000026",
+      "location": "Tehran",
+      "tags": ["Professional"],
+      "about": "React developer with experience in responsive interfaces.",
+      "experience": "3 years",
+      "skills": ["React", "JavaScript", "TypeScript", "CSS"],
+      "attachments": [
+        {
+          "name": "yasmin-norouzi-resume.pdf",
+          "url": "/files/resumes/yasmin-norouzi-resume.pdf",
+          "size": "710 KB"
+        }
+      ],
+      "jobId": 2,
+      "appliedFor": "React Developer",
+      "appliedAt": "2026-08-31",
+      "stage": "Applied",
+      "expectedSalary": "$2,200",
+      "notes": "Application awaiting review.",
+      "status": "Active",
+      "activity": [
+        {
+          "date": "2026-08-31",
+          "action": "Application received",
+          "by": "System"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Farhad Bagheri",
+      "email": "farhad.bagheri@example.com",
+      "phone": "+98-912-1000027",
+      "location": "Karaj",
+      "tags": ["Experienced"],
+      "about": "UI/UX designer with strong product design experience.",
+      "experience": "5 years",
+      "skills": ["Figma", "UI/UX", "Design Systems", "Prototyping"],
+      "attachments": [
+        {
+          "name": "farhad-bagheri-resume.pdf",
+          "url": "/files/resumes/farhad-bagheri-resume.pdf",
+          "size": "820 KB"
+        }
+      ],
+      "jobId": 3,
+      "appliedFor": "UI/UX Designer",
+      "appliedAt": "2026-09-01",
+      "stage": "Screening",
+      "expectedSalary": "$2,300",
+      "notes": "Portfolio is under review.",
+      "status": "Active",
+      "activity": [
+        {
+          "date": "2026-09-01",
+          "action": "Application received",
+          "by": "System"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Roya Ramezani",
+      "email": "roya.ramezani@example.com",
+      "phone": "+98-912-1000028",
+      "location": "Tehran",
+      "tags": ["Professional"],
+      "about": "Backend developer with REST API experience.",
+      "experience": "4 years",
+      "skills": ["Node.js", "REST API", "PostgreSQL", "Docker"],
+      "attachments": [
+        {
+          "name": "roya-ramezani-resume.pdf",
+          "url": "/files/resumes/roya-ramezani-resume.pdf",
+          "size": "770 KB"
+        }
+      ],
+      "jobId": 4,
+      "appliedFor": "Backend Developer",
+      "appliedAt": "2026-09-02",
+      "stage": "Interview",
+      "interviewRound": {
+        "current": 1,
+        "total": 2
+      },
+      "expectedSalary": "$3,500",
+      "notes": "Good backend fundamentals.",
+      "status": "Active",
+      "activity": [
+        {
+          "date": "2026-09-02",
+          "action": "Application received",
+          "by": "System"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Milad Daryaei",
+      "email": "milad.daryaei@example.com",
+      "phone": "+98-912-1000029",
+      "location": "Tehran",
+      "tags": ["Professional"],
+      "about": "Product manager experienced in agile product teams.",
+      "experience": "4 years",
+      "skills": ["Product Management", "Agile", "Analytics", "Strategy"],
+      "attachments": [
+        {
+          "name": "milad-daryaei-resume.pdf",
+          "url": "/files/resumes/milad-daryaei-resume.pdf",
+          "size": "750 KB"
+        }
+      ],
+      "jobId": 5,
+      "appliedFor": "Product Manager",
+      "appliedAt": "2026-09-03",
+      "stage": "Applied",
+      "expectedSalary": "$3,600",
+      "notes": "Application awaiting review.",
+      "status": "Active",
+      "activity": [
+        {
+          "date": "2026-09-03",
+          "action": "Application received",
+          "by": "System"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Samira Abbasi",
+      "email": "samira.abbasi@example.com",
+      "phone": "+98-912-1000030",
+      "location": "Karaj",
+      "tags": ["Professional"],
+      "about": "QA engineer with manual and automated testing experience.",
+      "experience": "3 years",
+      "skills": ["Cypress", "API Testing", "Manual Testing", "Git"],
+      "attachments": [
+        {
+          "name": "samira-abbasi-resume.pdf",
+          "url": "/files/resumes/samira-abbasi-resume.pdf",
+          "size": "680 KB"
+        }
+      ],
+      "jobId": 6,
+      "appliedFor": "QA Engineer",
+      "appliedAt": "2026-09-04",
+      "stage": "Rejected",
+      "expectedSalary": "$2,000",
+      "notes": "Automation experience was insufficient.",
+      "status": "Rejected",
+      "activity": [
+        {
+          "date": "2026-09-04",
+          "action": "Application received",
+          "by": "System"
+        }
+      ]
+    }
+  ],
+
+  "interviews": [
+    {
+      "id": 1,
+      "candidateId": 2,
+      "jobId": 2,
+      "date": "2026-09-07",
+      "time": "10:00",
+      "type": "video",
+      "status": "Scheduled",
+      "notes": "Initial technical interview."
+    },
+    {
+      "id": 2,
+      "candidateId": 3,
+      "jobId": 3,
+      "date": "2026-09-07",
+      "time": "14:00",
+      "type": "onsite",
+      "status": "Scheduled",
+      "notes": "Portfolio review."
+    },
+    {
+      "id": 3,
+      "candidateId": 5,
+      "jobId": 5,
+      "date": "2026-09-08",
+      "time": "11:00",
+      "type": "video",
+      "status": "Scheduled",
+      "notes": "Product interview."
+    },
+    {
+      "id": 4,
+      "candidateId": 6,
+      "jobId": 6,
+      "date": "2026-09-09",
+      "time": "09:30",
+      "type": "video",
+      "status": "Scheduled",
+      "notes": "QA technical interview."
+    },
+    {
+      "id": 5,
+      "candidateId": 7,
+      "jobId": 8,
+      "date": "2026-08-20",
+      "time": "15:00",
+      "type": "video",
+      "status": "Completed",
+      "notes": "DevOps technical interview."
+    },
+    {
+      "id": 6,
+      "candidateId": 8,
+      "jobId": 11,
+      "date": "2026-08-22",
+      "time": "10:30",
+      "type": "onsite",
+      "status": "Completed",
+      "notes": "Writing and documentation review."
+    },
+    {
+      "id": 7,
+      "candidateId": 9,
+      "jobId": 1,
+      "date": "2026-08-25",
+      "time": "13:00",
+      "type": "video",
+      "status": "Completed",
+      "notes": "Frontend technical interview."
+    },
+    {
+      "id": 8,
+      "candidateId": 10,
+      "jobId": 2,
+      "date": "2026-08-27",
+      "time": "11:30",
+      "type": "video",
+      "status": "Completed",
+      "notes": "React technical interview."
+    },
+    {
+      "id": 9,
+      "candidateId": 12,
+      "jobId": 4,
+      "date": "2026-08-29",
+      "time": "14:30",
+      "type": "onsite",
+      "status": "Completed",
+      "notes": "Backend technical interview."
+    },
+    {
+      "id": 10,
+      "candidateId": 13,
+      "jobId": 5,
+      "date": "2026-09-01",
+      "time": "10:00",
+      "type": "video",
+      "status": "Cancelled",
+      "notes": "Interview cancelled by candidate."
+    },
+    {
+      "id": 11,
+      "candidateId": 15,
+      "jobId": 8,
+      "date": "2026-09-02",
+      "time": "09:00",
+      "type": "video",
+      "status": "Completed",
+      "notes": "Infrastructure interview."
+    },
+    {
+      "id": 12,
+      "candidateId": 17,
+      "jobId": 1,
+      "date": "2026-09-03",
+      "time": "16:00",
+      "type": "onsite",
+      "status": "Completed",
+      "notes": "Senior frontend interview."
+    },
+    {
+      "id": 13,
+      "candidateId": 18,
+      "jobId": 2,
+      "date": "2026-09-04",
+      "time": "10:30",
+      "type": "video",
+      "status": "Completed",
+      "notes": "React interview."
+    },
+    {
+      "id": 14,
+      "candidateId": 20,
+      "jobId": 4,
+      "date": "2026-09-05",
+      "time": "12:00",
+      "type": "video",
+      "status": "Completed",
+      "notes": "Backend interview."
+    },
+    {
+      "id": 15,
+      "candidateId": 21,
+      "jobId": 5,
+      "date": "2026-09-06",
+      "time": "15:00",
+      "type": "video",
+      "status": "Scheduled",
+      "notes": "Product management interview."
+    },
+    {
+      "id": 16,
+      "candidateId": 22,
+      "jobId": 6,
+      "date": "2026-09-08",
+      "time": "13:30",
+      "type": "video",
+      "status": "Scheduled",
+      "notes": "QA interview."
+    },
+    {
+      "id": 17,
+      "candidateId": 24,
+      "jobId": 11,
+      "date": "2026-09-10",
+      "time": "11:00",
+      "type": "onsite",
+      "status": "Scheduled",
+      "notes": "Final technical writing interview."
+    },
+    {
+      "id": 18,
+      "candidateId": 25,
+      "jobId": 1,
+      "date": "2026-09-11",
+      "time": "10:00",
+      "type": "video",
+      "status": "Scheduled",
+      "notes": "Frontend interview."
+    },
+    {
+      "id": 19,
+      "candidateId": 27,
+      "jobId": 3,
+      "date": "2026-09-12",
+      "time": "14:00",
+      "type": "video",
+      "status": "Scheduled",
+      "notes": "Design interview."
+    },
+    {
+      "id": 20,
+      "candidateId": 30,
+      "jobId": 6,
+      "date": "2026-09-14",
+      "time": "09:30",
+      "type": "video",
+      "status": "Scheduled",
+      "notes": "QA interview."
+    }
+  ]
+}
