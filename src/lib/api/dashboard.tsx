@@ -2,7 +2,8 @@ import { ICandidate } from "@/types/candidate"
 import { getCandidates } from "./candidates"
 import { getInterviews } from "./interviews"
 import { getJobs } from "./jobs"
-import { IDashboard } from "@/types/dashboard"
+import { IStats } from "@/types/dashboard"
+import { resolve } from "path"
 
 
 function getChanges(array: any[], field: string): number {
@@ -29,7 +30,8 @@ function calculateTimeToHire(candidates: ICandidate[]): number {
   }
   
 
-export async function getDashboard():Promise<IDashboard> {
+export async function getStats():Promise<IStats> {
+    await new Promise((resolve)=> setTimeout(resolve, 3000))
     try {
         const [jobsList, candidatesList, interviewsList] = await Promise.all([
             getJobs(),
@@ -48,7 +50,8 @@ export async function getDashboard():Promise<IDashboard> {
                 changes: getChanges(jobsList, 'postedAt')
             },
             interviews: {
-                value: interviewsList.length
+                value: interviewsList.length,
+                next: '14:00' // tod: calculate the next interview time
             },
             timeToHire: {
                 value: calculateTimeToHire(candidatesList),
