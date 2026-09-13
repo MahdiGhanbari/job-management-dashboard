@@ -12,3 +12,18 @@ export async function getJobs(): Promise<IJob[]> {
     return res.json()
 }
 
+export async function addJob(data: IJob) {
+    const res = await fetch(`${API_URL}/jobs`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+        
+    })
+
+    if(!res.ok) {
+        throw new Error('Failed to create new job')
+    }
+}
+

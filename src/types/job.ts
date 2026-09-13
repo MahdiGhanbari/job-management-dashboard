@@ -1,15 +1,15 @@
 export interface IJob {
-    id: number;
+    id?: number;
     title: string;
     department: string;
     location: string;
-    jobType: "Full-time" | "Part-time" | "Contract";
+    jobType: "Full-time" | "Part-time" | "Contract" | string;
     status: "Active" | "Closed" | "Draft";
     postedAt: string;
   }
   
   export interface IJobDetails {
-    id: number;
+    id?: number;
     description: string;
     requirements: string[];
     responsibilities?: string[];

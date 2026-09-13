@@ -1,7 +1,7 @@
 {
   "jobs": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Senior Frontend Developer",
       "department": "Engineering",
       "location": "Remote",
@@ -10,7 +10,7 @@
       "postedAt": "2026-08-01"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "React Developer",
       "department": "Engineering",
       "location": "Tehran",
@@ -19,7 +19,7 @@
       "postedAt": "2026-08-04"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "UI/UX Designer",
       "department": "Design",
       "location": "Tehran",
@@ -28,7 +28,7 @@
       "postedAt": "2026-08-06"
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "Backend Developer",
       "department": "Engineering",
       "location": "Remote",
@@ -37,7 +37,7 @@
       "postedAt": "2026-08-08"
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "Product Manager",
       "department": "Product",
       "location": "Tehran",
@@ -46,7 +46,7 @@
       "postedAt": "2026-08-10"
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "QA Engineer",
       "department": "Engineering",
       "location": "Karaj",
@@ -55,7 +55,7 @@
       "postedAt": "2026-08-12"
     },
     {
-      "id": 7,
+      "id": "7",
       "title": "Mobile Developer",
       "department": "Engineering",
       "location": "Remote",
@@ -64,7 +64,7 @@
       "postedAt": "2026-07-15"
     },
     {
-      "id": 8,
+      "id": "8",
       "title": "DevOps Engineer",
       "department": "Infrastructure",
       "location": "Tehran",
@@ -73,7 +73,7 @@
       "postedAt": "2026-08-16"
     },
     {
-      "id": 9,
+      "id": "9",
       "title": "Data Analyst",
       "department": "Data",
       "location": "Tehran",
@@ -82,7 +82,7 @@
       "postedAt": "2026-08-20"
     },
     {
-      "id": 10,
+      "id": "10",
       "title": "HR Specialist",
       "department": "Human Resources",
       "location": "Karaj",
@@ -91,7 +91,7 @@
       "postedAt": "2026-07-25"
     },
     {
-      "id": 11,
+      "id": "11",
       "title": "Technical Writer",
       "department": "Product",
       "location": "Remote",
@@ -100,19 +100,99 @@
       "postedAt": "2026-08-22"
     },
     {
-      "id": 12,
+      "id": "12",
       "title": "Marketing Specialist",
       "department": "Marketing",
       "location": "Tehran",
       "jobType": "Full-time",
       "status": "Closed",
       "postedAt": "2026-07-28"
+    },
+    {
+      "id": "2lYuHE_Hejc",
+      "title": "sofware eeeeenginer",
+      "department": "engineering",
+      "location": "remote",
+      "jobType": null,
+      "postedAt": "1789226107370",
+      "status": "Draft"
+    },
+    {
+      "id": "SyvfM4a4HGQ",
+      "title": "senior desinger",
+      "department": "design",
+      "location": "austin",
+      "jobType": "contract",
+      "postedAt": "1789226257904",
+      "status": "Draft"
+    },
+    {
+      "title": "sdfd",
+      "department": "customer-support",
+      "location": "chicago",
+      "jobType": "part-time",
+      "postedAt": "1789232281193",
+      "status": "Draft",
+      "id": "kASGAGmCMzE"
+    },
+    {
+      "title": "sdf",
+      "department": "marketing",
+      "location": "austin",
+      "jobType": "temporary",
+      "postedAt": "1789232635150",
+      "status": "Draft",
+      "id": "zEh4W9-EyDg"
+    },
+    {
+      "title": "asdd",
+      "department": "design",
+      "location": "remote",
+      "jobType": "contract",
+      "postedAt": "2026-09-12",
+      "status": "Draft",
+      "id": "soPsn84UWEY"
+    },
+    {
+      "title": "sdfdf",
+      "department": "design",
+      "location": "remote",
+      "jobType": "contract",
+      "postedAt": "2026-09-12",
+      "status": "Draft",
+      "id": "N0PZf-EIAbI"
+    },
+    {
+      "title": "sdfsd",
+      "department": "design",
+      "location": "remote",
+      "jobType": "contract",
+      "postedAt": "2026-09-12",
+      "status": "Draft",
+      "id": "8Ky8DTt8et4"
+    },
+    {
+      "title": "asdfasdf",
+      "department": "design",
+      "location": "austin",
+      "jobType": "internship",
+      "postedAt": "2026-09-12",
+      "status": "Draft",
+      "id": "8BMlAjH38Qk"
+    },
+    {
+      "title": "sdfasdf",
+      "department": "human-resources",
+      "location": "austin",
+      "jobType": "temporary",
+      "postedAt": "2026-09-12",
+      "status": "Draft",
+      "id": "xrf5bFYjHuc"
     }
   ],
-
   "jobDetails": [
     {
-      "id": 1,
+      "id": "1",
       "description": "We are looking for a Senior Frontend Developer to build scalable and high-performance web applications.",
       "requirements": [
         "5+ years of frontend development experience",
@@ -145,7 +225,7 @@
       "timeToHire": "28 days"
     },
     {
-      "id": 2,
+      "id": "2",
       "description": "Join our frontend team to develop modern React applications used by thousands of customers.",
       "requirements": [
         "2+ years of frontend development experience",
@@ -177,7 +257,7 @@
       "timeToHire": "24 days"
     },
     {
-      "id": 3,
+      "id": "3",
       "description": "We are looking for a creative UI/UX Designer to improve the experience of our digital products.",
       "requirements": [
         "3+ years of UI/UX experience",
@@ -209,7 +289,7 @@
       "timeToHire": "30 days"
     },
     {
-      "id": 4,
+      "id": "4",
       "description": "Backend Developer responsible for building reliable APIs and scalable backend services.",
       "requirements": [
         "4+ years backend development",
@@ -242,7 +322,7 @@
       "timeToHire": "26 days"
     },
     {
-      "id": 5,
+      "id": "5",
       "description": "Product Manager responsible for defining product strategy and coordinating product development.",
       "requirements": [
         "4+ years product management",
@@ -274,7 +354,7 @@
       "timeToHire": "32 days"
     },
     {
-      "id": 6,
+      "id": "6",
       "description": "QA Engineer responsible for maintaining software quality through manual and automated testing.",
       "requirements": [
         "2+ years QA experience",
@@ -306,7 +386,7 @@
       "timeToHire": "25 days"
     },
     {
-      "id": 7,
+      "id": "7",
       "description": "Mobile Developer responsible for developing and maintaining cross-platform mobile applications.",
       "requirements": [
         "3+ years mobile development",
@@ -338,7 +418,7 @@
       "timeToHire": "21 days"
     },
     {
-      "id": 8,
+      "id": "8",
       "description": "DevOps Engineer responsible for infrastructure, deployment automation and cloud environments.",
       "requirements": [
         "4+ years DevOps experience",
@@ -371,7 +451,7 @@
       "timeToHire": "29 days"
     },
     {
-      "id": 9,
+      "id": "9",
       "description": "Data Analyst responsible for transforming business data into actionable insights.",
       "requirements": [
         "2+ years data analysis",
@@ -404,7 +484,7 @@
       "timeToHire": "30 days"
     },
     {
-      "id": 10,
+      "id": "10",
       "description": "HR Specialist responsible for recruitment and employee support activities.",
       "requirements": [
         "2+ years HR experience",
@@ -436,7 +516,7 @@
       "timeToHire": "20 days"
     },
     {
-      "id": 11,
+      "id": "11",
       "description": "Technical Writer responsible for creating clear and useful technical documentation.",
       "requirements": [
         "3+ years technical writing",
@@ -469,7 +549,7 @@
       "timeToHire": "27 days"
     },
     {
-      "id": 12,
+      "id": "12",
       "description": "Marketing Specialist responsible for digital marketing campaigns and content strategy.",
       "requirements": [
         "2+ years marketing experience",
@@ -502,10 +582,9 @@
       "timeToHire": "23 days"
     }
   ],
-
   "candidates": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Ali Ahmadi",
       "email": "ali.ahmadi@example.com",
       "phone": "+98-912-1000001",
@@ -515,7 +594,7 @@
       "stage": "Interview"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Sara Karimi",
       "email": "sara.karimi@example.com",
       "phone": "+98-912-1000002",
@@ -525,7 +604,7 @@
       "stage": "Screening"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Reza Mohammadi",
       "email": "reza.mohammadi@example.com",
       "phone": "+98-912-1000003",
@@ -535,7 +614,7 @@
       "stage": "Interview"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Neda Hosseini",
       "email": "neda.hosseini@example.com",
       "phone": "+98-912-1000004",
@@ -546,7 +625,7 @@
       "stage": "Hired"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Amir Rahimi",
       "email": "amir.rahimi@example.com",
       "phone": "+98-912-1000005",
@@ -556,7 +635,7 @@
       "stage": "Rejected"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Mina Ebrahimi",
       "email": "mina.ebrahimi@example.com",
       "phone": "+98-912-1000006",
@@ -566,7 +645,7 @@
       "stage": "Interview"
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Sina Jafari",
       "email": "sina.jafari@example.com",
       "phone": "+98-912-1000007",
@@ -576,7 +655,7 @@
       "stage": "Screening"
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "Leila Moradi",
       "email": "leila.moradi@example.com",
       "phone": "+98-912-1000008",
@@ -586,7 +665,7 @@
       "stage": "Interview"
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "Arman Nouri",
       "email": "arman.nouri@example.com",
       "phone": "+98-912-1000009",
@@ -596,7 +675,7 @@
       "stage": "Interview"
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "Parisa Kazemi",
       "email": "parisa.kazemi@example.com",
       "phone": "+98-912-1000010",
@@ -606,7 +685,7 @@
       "stage": "Applied"
     },
     {
-      "id": 11,
+      "id": "11",
       "name": "Mehdi Rostami",
       "email": "mehdi.rostami@example.com",
       "phone": "+98-912-1000011",
@@ -616,7 +695,7 @@
       "stage": "Applied"
     },
     {
-      "id": 12,
+      "id": "12",
       "name": "Zahra Sadeghi",
       "email": "zahra.sadeghi@example.com",
       "phone": "+98-912-1000012",
@@ -626,7 +705,7 @@
       "stage": "Screening"
     },
     {
-      "id": 13,
+      "id": "13",
       "name": "Pouya Shirazi",
       "email": "pouya.shirazi@example.com",
       "phone": "+98-912-1000013",
@@ -636,18 +715,18 @@
       "stage": "Interview"
     },
     {
-      "id": 14,
+      "id": "14",
       "name": "Maryam Yousefi",
       "email": "maryam.yousefi@example.com",
       "phone": "+98-912-1000014",
       "location": "Tehran",
       "jobId": 6,
       "appliedAt": "2026-08-19",
-       "hiredAt": "2026-08-30",
+      "hiredAt": "2026-08-30",
       "stage": "Hired"
     },
     {
-      "id": 15,
+      "id": "15",
       "name": "Navid Hashemi",
       "email": "navid.hashemi@example.com",
       "phone": "+98-912-1000015",
@@ -657,7 +736,7 @@
       "stage": "Rejected"
     },
     {
-      "id": 16,
+      "id": "16",
       "name": "Elham Ghasemi",
       "email": "elham.ghasemi@example.com",
       "phone": "+98-912-1000016",
@@ -667,7 +746,7 @@
       "stage": "Applied"
     },
     {
-      "id": 17,
+      "id": "17",
       "name": "Kian Taheri",
       "email": "kian.taheri@example.com",
       "phone": "+98-912-1000017",
@@ -677,7 +756,7 @@
       "stage": "Screening"
     },
     {
-      "id": 18,
+      "id": "18",
       "name": "Shirin Amini",
       "email": "shirin.amini@example.com",
       "phone": "+98-912-1000018",
@@ -687,7 +766,7 @@
       "stage": "Interview"
     },
     {
-      "id": 19,
+      "id": "19",
       "name": "Omid Farhadi",
       "email": "omid.farhadi@example.com",
       "phone": "+98-912-1000019",
@@ -697,7 +776,7 @@
       "stage": "Applied"
     },
     {
-      "id": 20,
+      "id": "20",
       "name": "Nazanin Mousavi",
       "email": "nazanin.mousavi@example.com",
       "phone": "+98-912-1000020",
@@ -707,7 +786,7 @@
       "stage": "Rejected"
     },
     {
-      "id": 21,
+      "id": "21",
       "name": "Hamed Jalali",
       "email": "hamed.jalali@example.com",
       "phone": "+98-912-1000021",
@@ -717,7 +796,7 @@
       "stage": "Applied"
     },
     {
-      "id": 22,
+      "id": "22",
       "name": "Sahar Vahidi",
       "email": "sahar.vahidi@example.com",
       "phone": "+98-912-1000022",
@@ -727,7 +806,7 @@
       "stage": "Screening"
     },
     {
-      "id": 23,
+      "id": "23",
       "name": "Kasra Zarei",
       "email": "kasra.zarei@example.com",
       "phone": "+98-912-1000023",
@@ -737,18 +816,18 @@
       "stage": "Interview"
     },
     {
-      "id": 24,
+      "id": "24",
       "name": "Atefeh Salehi",
       "email": "atefeh.salehi@example.com",
       "phone": "+98-912-1000024",
       "location": "Karaj",
       "jobId": 11,
       "appliedAt": "2026-08-29",
-       "hiredAt": "2026-09-04",
+      "hiredAt": "2026-09-04",
       "stage": "Hired"
     },
     {
-      "id": 25,
+      "id": "25",
       "name": "Morteza Fazeli",
       "email": "morteza.fazeli@example.com",
       "phone": "+98-912-1000025",
@@ -758,7 +837,7 @@
       "stage": "Rejected"
     },
     {
-      "id": 26,
+      "id": "26",
       "name": "Yasmin Norouzi",
       "email": "yasmin.norouzi@example.com",
       "phone": "+98-912-1000026",
@@ -768,7 +847,7 @@
       "stage": "Applied"
     },
     {
-      "id": 27,
+      "id": "27",
       "name": "Farhad Bagheri",
       "email": "farhad.bagheri@example.com",
       "phone": "+98-912-1000027",
@@ -778,7 +857,7 @@
       "stage": "Screening"
     },
     {
-      "id": 28,
+      "id": "28",
       "name": "Roya Ramezani",
       "email": "roya.ramezani@example.com",
       "phone": "+98-912-1000028",
@@ -788,7 +867,7 @@
       "stage": "Interview"
     },
     {
-      "id": 29,
+      "id": "29",
       "name": "Milad Daryaei",
       "email": "milad.daryaei@example.com",
       "phone": "+98-912-1000029",
@@ -798,7 +877,7 @@
       "stage": "Applied"
     },
     {
-      "id": 30,
+      "id": "30",
       "name": "Samira Abbasi",
       "email": "samira.abbasi@example.com",
       "phone": "+98-912-1000030",
@@ -808,18 +887,26 @@
       "stage": "Rejected"
     }
   ],
-
   "candidateDetails": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Ali Ahmadi",
       "email": "ali.ahmadi@example.com",
       "phone": "+98-912-1000001",
       "location": "Tehran",
-      "tags": ["Experienced", "Recommended"],
+      "tags": [
+        "Experienced",
+        "Recommended"
+      ],
       "about": "Experienced frontend developer focused on scalable web applications.",
       "experience": "6+ years",
-      "skills": ["JavaScript", "TypeScript", "React", "Next.js", "Tailwind CSS"],
+      "skills": [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Next.js",
+        "Tailwind CSS"
+      ],
       "attachments": [
         {
           "name": "ali-ahmadi-resume.pdf",
@@ -852,15 +939,23 @@
       ]
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Sara Karimi",
       "email": "sara.karimi@example.com",
       "phone": "+98-912-1000002",
       "location": "Tehran",
-      "tags": ["Professional"],
+      "tags": [
+        "Professional"
+      ],
       "about": "Frontend developer experienced in React applications.",
       "experience": "3 years",
-      "skills": ["React", "TypeScript", "JavaScript", "CSS", "Git"],
+      "skills": [
+        "React",
+        "TypeScript",
+        "JavaScript",
+        "CSS",
+        "Git"
+      ],
       "attachments": [
         {
           "name": "sara-karimi-resume.pdf",
@@ -888,15 +983,22 @@
       ]
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Reza Mohammadi",
       "email": "reza.mohammadi@example.com",
       "phone": "+98-912-1000003",
       "location": "Karaj",
-      "tags": ["Experienced"],
+      "tags": [
+        "Experienced"
+      ],
       "about": "UI/UX designer with a strong product design background.",
       "experience": "5 years",
-      "skills": ["Figma", "UI/UX", "Prototyping", "Design Systems"],
+      "skills": [
+        "Figma",
+        "UI/UX",
+        "Prototyping",
+        "Design Systems"
+      ],
       "attachments": [
         {
           "name": "reza-mohammadi-resume.pdf",
@@ -924,15 +1026,23 @@
       ]
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Neda Hosseini",
       "email": "neda.hosseini@example.com",
       "phone": "+98-912-1000004",
       "location": "Tehran",
-      "tags": ["Recommended"],
+      "tags": [
+        "Recommended"
+      ],
       "about": "Backend developer experienced in Node.js and API development.",
       "experience": "6 years",
-      "skills": ["Node.js", "TypeScript", "REST API", "PostgreSQL", "Docker"],
+      "skills": [
+        "Node.js",
+        "TypeScript",
+        "REST API",
+        "PostgreSQL",
+        "Docker"
+      ],
       "attachments": [
         {
           "name": "neda-hosseini-resume.pdf",
@@ -965,15 +1075,22 @@
       ]
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Amir Rahimi",
       "email": "amir.rahimi@example.com",
       "phone": "+98-912-1000005",
       "location": "Tehran",
-      "tags": ["Professional"],
+      "tags": [
+        "Professional"
+      ],
       "about": "Product manager with SaaS product experience.",
       "experience": "5 years",
-      "skills": ["Product Management", "Agile", "Analytics", "Roadmapping"],
+      "skills": [
+        "Product Management",
+        "Agile",
+        "Analytics",
+        "Roadmapping"
+      ],
       "attachments": [
         {
           "name": "amir-rahimi-resume.pdf",
@@ -1002,15 +1119,23 @@
       ]
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Mina Ebrahimi",
       "email": "mina.ebrahimi@example.com",
       "phone": "+98-912-1000006",
       "location": "Karaj",
-      "tags": ["Experienced"],
+      "tags": [
+        "Experienced"
+      ],
       "about": "QA engineer specialized in automated testing.",
       "experience": "4 years",
-      "skills": ["Cypress", "Playwright", "API Testing", "JavaScript", "Git"],
+      "skills": [
+        "Cypress",
+        "Playwright",
+        "API Testing",
+        "JavaScript",
+        "Git"
+      ],
       "attachments": [
         {
           "name": "mina-ebrahimi-resume.pdf",
@@ -1038,15 +1163,23 @@
       ]
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Sina Jafari",
       "email": "sina.jafari@example.com",
       "phone": "+98-912-1000007",
       "location": "Tehran",
-      "tags": ["Experienced"],
+      "tags": [
+        "Experienced"
+      ],
       "about": "DevOps engineer with cloud and Kubernetes experience.",
       "experience": "5 years",
-      "skills": ["Docker", "Kubernetes", "AWS", "CI/CD", "Linux"],
+      "skills": [
+        "Docker",
+        "Kubernetes",
+        "AWS",
+        "CI/CD",
+        "Linux"
+      ],
       "attachments": [
         {
           "name": "sina-jafari-resume.pdf",
@@ -1070,15 +1203,22 @@
       ]
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "Leila Moradi",
       "email": "leila.moradi@example.com",
       "phone": "+98-912-1000008",
       "location": "Tehran",
-      "tags": ["Professional"],
+      "tags": [
+        "Professional"
+      ],
       "about": "Technical writer experienced in developer documentation.",
       "experience": "4 years",
-      "skills": ["Technical Writing", "Markdown", "API Documentation", "Git"],
+      "skills": [
+        "Technical Writing",
+        "Markdown",
+        "API Documentation",
+        "Git"
+      ],
       "attachments": [
         {
           "name": "leila-moradi-resume.pdf",
@@ -1106,15 +1246,23 @@
       ]
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "Arman Nouri",
       "email": "arman.nouri@example.com",
       "phone": "+98-912-1000009",
       "location": "Karaj",
-      "tags": ["Experienced"],
+      "tags": [
+        "Experienced"
+      ],
       "about": "Senior frontend developer with strong React experience.",
       "experience": "7 years",
-      "skills": ["React", "Next.js", "TypeScript", "JavaScript", "Tailwind CSS"],
+      "skills": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "JavaScript",
+        "Tailwind CSS"
+      ],
       "attachments": [
         {
           "name": "arman-nouri-resume.pdf",
@@ -1142,15 +1290,22 @@
       ]
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "Parisa Kazemi",
       "email": "parisa.kazemi@example.com",
       "phone": "+98-912-1000010",
       "location": "Tehran",
-      "tags": ["Professional"],
+      "tags": [
+        "Professional"
+      ],
       "about": "Frontend developer with React and TypeScript experience.",
       "experience": "3 years",
-      "skills": ["React", "TypeScript", "CSS", "Git"],
+      "skills": [
+        "React",
+        "TypeScript",
+        "CSS",
+        "Git"
+      ],
       "attachments": [
         {
           "name": "parisa-kazemi-resume.pdf",
@@ -1174,15 +1329,22 @@
       ]
     },
     {
-      "id": 11,
+      "id": "11",
       "name": "Mehdi Rostami",
       "email": "mehdi.rostami@example.com",
       "phone": "+98-912-1000011",
       "location": "Tehran",
-      "tags": ["Professional"],
+      "tags": [
+        "Professional"
+      ],
       "about": "Product designer with experience in digital products.",
       "experience": "4 years",
-      "skills": ["Figma", "UI/UX", "Prototyping", "User Research"],
+      "skills": [
+        "Figma",
+        "UI/UX",
+        "Prototyping",
+        "User Research"
+      ],
       "attachments": [
         {
           "name": "mehdi-rostami-resume.pdf",
@@ -1206,15 +1368,22 @@
       ]
     },
     {
-      "id": 12,
+      "id": "12",
       "name": "Zahra Sadeghi",
       "email": "zahra.sadeghi@example.com",
       "phone": "+98-912-1000012",
       "location": "Karaj",
-      "tags": ["Experienced"],
+      "tags": [
+        "Experienced"
+      ],
       "about": "Backend developer with Node.js and PostgreSQL experience.",
       "experience": "5 years",
-      "skills": ["Node.js", "PostgreSQL", "REST API", "Docker"],
+      "skills": [
+        "Node.js",
+        "PostgreSQL",
+        "REST API",
+        "Docker"
+      ],
       "attachments": [
         {
           "name": "zahra-sadeghi-resume.pdf",
@@ -1238,15 +1407,22 @@
       ]
     },
     {
-      "id": 13,
+      "id": "13",
       "name": "Pouya Shirazi",
       "email": "pouya.shirazi@example.com",
       "phone": "+98-912-1000013",
       "location": "Tehran",
-      "tags": ["Recommended"],
+      "tags": [
+        "Recommended"
+      ],
       "about": "Product manager experienced in SaaS products.",
       "experience": "6 years",
-      "skills": ["Product Management", "Agile", "Analytics", "Roadmapping"],
+      "skills": [
+        "Product Management",
+        "Agile",
+        "Analytics",
+        "Roadmapping"
+      ],
       "attachments": [
         {
           "name": "pouya-shirazi-resume.pdf",
@@ -1274,15 +1450,22 @@
       ]
     },
     {
-      "id": 14,
+      "id": "14",
       "name": "Maryam Yousefi",
       "email": "maryam.yousefi@example.com",
       "phone": "+98-912-1000014",
       "location": "Tehran",
-      "tags": ["Experienced"],
+      "tags": [
+        "Experienced"
+      ],
       "about": "QA engineer focused on automation and API testing.",
       "experience": "5 years",
-      "skills": ["Cypress", "API Testing", "JavaScript", "Playwright"],
+      "skills": [
+        "Cypress",
+        "API Testing",
+        "JavaScript",
+        "Playwright"
+      ],
       "attachments": [
         {
           "name": "maryam-yousefi-resume.pdf",
@@ -1310,15 +1493,22 @@
       ]
     },
     {
-      "id": 15,
+      "id": "15",
       "name": "Navid Hashemi",
       "email": "navid.hashemi@example.com",
       "phone": "+98-912-1000015",
       "location": "Karaj",
-      "tags": ["Professional"],
+      "tags": [
+        "Professional"
+      ],
       "about": "DevOps engineer with infrastructure experience.",
       "experience": "5 years",
-      "skills": ["Docker", "Kubernetes", "Linux", "CI/CD"],
+      "skills": [
+        "Docker",
+        "Kubernetes",
+        "Linux",
+        "CI/CD"
+      ],
       "attachments": [
         {
           "name": "navid-hashemi-resume.pdf",
@@ -1342,15 +1532,22 @@
       ]
     },
     {
-      "id": 16,
+      "id": "16",
       "name": "Elham Ghasemi",
       "email": "elham.ghasemi@example.com",
       "phone": "+98-912-1000016",
       "location": "Tehran",
-      "tags": ["Professional"],
+      "tags": [
+        "Professional"
+      ],
       "about": "Technical writer experienced in API and developer documentation.",
       "experience": "3 years",
-      "skills": ["Technical Writing", "Markdown", "Git", "API Documentation"],
+      "skills": [
+        "Technical Writing",
+        "Markdown",
+        "Git",
+        "API Documentation"
+      ],
       "attachments": [
         {
           "name": "elham-ghasemi-resume.pdf",
@@ -1374,15 +1571,22 @@
       ]
     },
     {
-      "id": 17,
+      "id": "17",
       "name": "Kian Taheri",
       "email": "kian.taheri@example.com",
       "phone": "+98-912-1000017",
       "location": "Tehran",
-      "tags": ["Experienced"],
+      "tags": [
+        "Experienced"
+      ],
       "about": "Frontend developer experienced in modern React applications.",
       "experience": "5 years",
-      "skills": ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+      "skills": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS"
+      ],
       "attachments": [
         {
           "name": "kian-taheri-resume.pdf",
@@ -1406,15 +1610,22 @@
       ]
     },
     {
-      "id": 18,
+      "id": "18",
       "name": "Shirin Amini",
       "email": "shirin.amini@example.com",
       "phone": "+98-912-1000018",
       "location": "Karaj",
-      "tags": ["Recommended"],
+      "tags": [
+        "Recommended"
+      ],
       "about": "React developer with strong TypeScript experience.",
       "experience": "4 years",
-      "skills": ["React", "TypeScript", "JavaScript", "Testing"],
+      "skills": [
+        "React",
+        "TypeScript",
+        "JavaScript",
+        "Testing"
+      ],
       "attachments": [
         {
           "name": "shirin-amini-resume.pdf",
@@ -1442,15 +1653,22 @@
       ]
     },
     {
-      "id": 19,
+      "id": "19",
       "name": "Omid Farhadi",
       "email": "omid.farhadi@example.com",
       "phone": "+98-912-1000019",
       "location": "Tehran",
-      "tags": ["Professional"],
+      "tags": [
+        "Professional"
+      ],
       "about": "UI/UX designer with strong prototyping skills.",
       "experience": "4 years",
-      "skills": ["Figma", "UI/UX", "Prototyping", "User Research"],
+      "skills": [
+        "Figma",
+        "UI/UX",
+        "Prototyping",
+        "User Research"
+      ],
       "attachments": [
         {
           "name": "omid-farhadi-resume.pdf",
@@ -1474,15 +1692,22 @@
       ]
     },
     {
-      "id": 20,
+      "id": "20",
       "name": "Nazanin Mousavi",
       "email": "nazanin.mousavi@example.com",
       "phone": "+98-912-1000020",
       "location": "Tehran",
-      "tags": ["Professional"],
+      "tags": [
+        "Professional"
+      ],
       "about": "Backend developer experienced in API development.",
       "experience": "3 years",
-      "skills": ["Node.js", "REST API", "PostgreSQL", "Git"],
+      "skills": [
+        "Node.js",
+        "REST API",
+        "PostgreSQL",
+        "Git"
+      ],
       "attachments": [
         {
           "name": "nazanin-mousavi-resume.pdf",
@@ -1506,15 +1731,22 @@
       ]
     },
     {
-      "id": 21,
+      "id": "21",
       "name": "Hamed Jalali",
       "email": "hamed.jalali@example.com",
       "phone": "+98-912-1000021",
       "location": "Karaj",
-      "tags": ["Professional"],
+      "tags": [
+        "Professional"
+      ],
       "about": "Product manager with experience in agile teams.",
       "experience": "4 years",
-      "skills": ["Product Management", "Agile", "Analytics", "Roadmapping"],
+      "skills": [
+        "Product Management",
+        "Agile",
+        "Analytics",
+        "Roadmapping"
+      ],
       "attachments": [
         {
           "name": "hamed-jalali-resume.pdf",
@@ -1538,15 +1770,22 @@
       ]
     },
     {
-      "id": 22,
+      "id": "22",
       "name": "Sahar Vahidi",
       "email": "sahar.vahidi@example.com",
       "phone": "+98-912-1000022",
       "location": "Tehran",
-      "tags": ["Experienced"],
+      "tags": [
+        "Experienced"
+      ],
       "about": "QA engineer experienced in automated testing.",
       "experience": "4 years",
-      "skills": ["Cypress", "Playwright", "API Testing", "JavaScript"],
+      "skills": [
+        "Cypress",
+        "Playwright",
+        "API Testing",
+        "JavaScript"
+      ],
       "attachments": [
         {
           "name": "sahar-vahidi-resume.pdf",
@@ -1570,15 +1809,23 @@
       ]
     },
     {
-      "id": 23,
+      "id": "23",
       "name": "Kasra Zarei",
       "email": "kasra.zarei@example.com",
       "phone": "+98-912-1000023",
       "location": "Tehran",
-      "tags": ["Experienced"],
+      "tags": [
+        "Experienced"
+      ],
       "about": "DevOps engineer specialized in Kubernetes.",
       "experience": "6 years",
-      "skills": ["Kubernetes", "Docker", "AWS", "Linux", "CI/CD"],
+      "skills": [
+        "Kubernetes",
+        "Docker",
+        "AWS",
+        "Linux",
+        "CI/CD"
+      ],
       "attachments": [
         {
           "name": "kasra-zarei-resume.pdf",
@@ -1606,15 +1853,22 @@
       ]
     },
     {
-      "id": 24,
+      "id": "24",
       "name": "Atefeh Salehi",
       "email": "atefeh.salehi@example.com",
       "phone": "+98-912-1000024",
       "location": "Karaj",
-      "tags": ["Recommended"],
+      "tags": [
+        "Recommended"
+      ],
       "about": "Technical writer with engineering background.",
       "experience": "5 years",
-      "skills": ["Technical Writing", "API Documentation", "Git", "Markdown"],
+      "skills": [
+        "Technical Writing",
+        "API Documentation",
+        "Git",
+        "Markdown"
+      ],
       "attachments": [
         {
           "name": "atefeh-salehi-resume.pdf",
@@ -1642,15 +1896,22 @@
       ]
     },
     {
-      "id": 25,
+      "id": "25",
       "name": "Morteza Fazeli",
       "email": "morteza.fazeli@example.com",
       "phone": "+98-912-1000025",
       "location": "Tehran",
-      "tags": ["Professional"],
+      "tags": [
+        "Professional"
+      ],
       "about": "Frontend developer with modern JavaScript experience.",
       "experience": "5 years",
-      "skills": ["JavaScript", "React", "TypeScript", "CSS"],
+      "skills": [
+        "JavaScript",
+        "React",
+        "TypeScript",
+        "CSS"
+      ],
       "attachments": [
         {
           "name": "morteza-fazeli-resume.pdf",
@@ -1674,15 +1935,22 @@
       ]
     },
     {
-      "id": 26,
+      "id": "26",
       "name": "Yasmin Norouzi",
       "email": "yasmin.norouzi@example.com",
       "phone": "+98-912-1000026",
       "location": "Tehran",
-      "tags": ["Professional"],
+      "tags": [
+        "Professional"
+      ],
       "about": "React developer with experience in responsive interfaces.",
       "experience": "3 years",
-      "skills": ["React", "JavaScript", "TypeScript", "CSS"],
+      "skills": [
+        "React",
+        "JavaScript",
+        "TypeScript",
+        "CSS"
+      ],
       "attachments": [
         {
           "name": "yasmin-norouzi-resume.pdf",
@@ -1706,15 +1974,22 @@
       ]
     },
     {
-      "id": 27,
+      "id": "27",
       "name": "Farhad Bagheri",
       "email": "farhad.bagheri@example.com",
       "phone": "+98-912-1000027",
       "location": "Karaj",
-      "tags": ["Experienced"],
+      "tags": [
+        "Experienced"
+      ],
       "about": "UI/UX designer with strong product design experience.",
       "experience": "5 years",
-      "skills": ["Figma", "UI/UX", "Design Systems", "Prototyping"],
+      "skills": [
+        "Figma",
+        "UI/UX",
+        "Design Systems",
+        "Prototyping"
+      ],
       "attachments": [
         {
           "name": "farhad-bagheri-resume.pdf",
@@ -1738,15 +2013,22 @@
       ]
     },
     {
-      "id": 28,
+      "id": "28",
       "name": "Roya Ramezani",
       "email": "roya.ramezani@example.com",
       "phone": "+98-912-1000028",
       "location": "Tehran",
-      "tags": ["Professional"],
+      "tags": [
+        "Professional"
+      ],
       "about": "Backend developer with REST API experience.",
       "experience": "4 years",
-      "skills": ["Node.js", "REST API", "PostgreSQL", "Docker"],
+      "skills": [
+        "Node.js",
+        "REST API",
+        "PostgreSQL",
+        "Docker"
+      ],
       "attachments": [
         {
           "name": "roya-ramezani-resume.pdf",
@@ -1774,15 +2056,22 @@
       ]
     },
     {
-      "id": 29,
+      "id": "29",
       "name": "Milad Daryaei",
       "email": "milad.daryaei@example.com",
       "phone": "+98-912-1000029",
       "location": "Tehran",
-      "tags": ["Professional"],
+      "tags": [
+        "Professional"
+      ],
       "about": "Product manager experienced in agile product teams.",
       "experience": "4 years",
-      "skills": ["Product Management", "Agile", "Analytics", "Strategy"],
+      "skills": [
+        "Product Management",
+        "Agile",
+        "Analytics",
+        "Strategy"
+      ],
       "attachments": [
         {
           "name": "milad-daryaei-resume.pdf",
@@ -1806,15 +2095,22 @@
       ]
     },
     {
-      "id": 30,
+      "id": "30",
       "name": "Samira Abbasi",
       "email": "samira.abbasi@example.com",
       "phone": "+98-912-1000030",
       "location": "Karaj",
-      "tags": ["Professional"],
+      "tags": [
+        "Professional"
+      ],
       "about": "QA engineer with manual and automated testing experience.",
       "experience": "3 years",
-      "skills": ["Cypress", "API Testing", "Manual Testing", "Git"],
+      "skills": [
+        "Cypress",
+        "API Testing",
+        "Manual Testing",
+        "Git"
+      ],
       "attachments": [
         {
           "name": "samira-abbasi-resume.pdf",
@@ -1838,10 +2134,9 @@
       ]
     }
   ],
-
   "interviews": [
     {
-      "id": 1,
+      "id": "1",
       "candidateId": 2,
       "jobId": 2,
       "date": "2026-09-07",
@@ -1851,7 +2146,7 @@
       "notes": "Initial technical interview."
     },
     {
-      "id": 2,
+      "id": "2",
       "candidateId": 3,
       "jobId": 3,
       "date": "2026-09-07",
@@ -1861,7 +2156,7 @@
       "notes": "Portfolio review."
     },
     {
-      "id": 3,
+      "id": "3",
       "candidateId": 5,
       "jobId": 5,
       "date": "2026-09-08",
@@ -1871,7 +2166,7 @@
       "notes": "Product interview."
     },
     {
-      "id": 4,
+      "id": "4",
       "candidateId": 6,
       "jobId": 6,
       "date": "2026-09-09",
@@ -1881,7 +2176,7 @@
       "notes": "QA technical interview."
     },
     {
-      "id": 5,
+      "id": "5",
       "candidateId": 7,
       "jobId": 8,
       "date": "2026-08-20",
@@ -1891,7 +2186,7 @@
       "notes": "DevOps technical interview."
     },
     {
-      "id": 6,
+      "id": "6",
       "candidateId": 8,
       "jobId": 11,
       "date": "2026-08-22",
@@ -1901,7 +2196,7 @@
       "notes": "Writing and documentation review."
     },
     {
-      "id": 7,
+      "id": "7",
       "candidateId": 9,
       "jobId": 1,
       "date": "2026-08-25",
@@ -1911,7 +2206,7 @@
       "notes": "Frontend technical interview."
     },
     {
-      "id": 8,
+      "id": "8",
       "candidateId": 10,
       "jobId": 2,
       "date": "2026-08-27",
@@ -1921,7 +2216,7 @@
       "notes": "React technical interview."
     },
     {
-      "id": 9,
+      "id": "9",
       "candidateId": 12,
       "jobId": 4,
       "date": "2026-08-29",
@@ -1931,7 +2226,7 @@
       "notes": "Backend technical interview."
     },
     {
-      "id": 10,
+      "id": "10",
       "candidateId": 13,
       "jobId": 5,
       "date": "2026-09-01",
@@ -1941,7 +2236,7 @@
       "notes": "Interview cancelled by candidate."
     },
     {
-      "id": 11,
+      "id": "11",
       "candidateId": 15,
       "jobId": 8,
       "date": "2026-09-02",
@@ -1951,7 +2246,7 @@
       "notes": "Infrastructure interview."
     },
     {
-      "id": 12,
+      "id": "12",
       "candidateId": 17,
       "jobId": 1,
       "date": "2026-09-03",
@@ -1961,7 +2256,7 @@
       "notes": "Senior frontend interview."
     },
     {
-      "id": 13,
+      "id": "13",
       "candidateId": 18,
       "jobId": 2,
       "date": "2026-09-04",
@@ -1971,7 +2266,7 @@
       "notes": "React interview."
     },
     {
-      "id": 14,
+      "id": "14",
       "candidateId": 20,
       "jobId": 4,
       "date": "2026-09-05",
@@ -1981,7 +2276,7 @@
       "notes": "Backend interview."
     },
     {
-      "id": 15,
+      "id": "15",
       "candidateId": 21,
       "jobId": 5,
       "date": "2026-09-06",
@@ -1991,7 +2286,7 @@
       "notes": "Product management interview."
     },
     {
-      "id": 16,
+      "id": "16",
       "candidateId": 22,
       "jobId": 6,
       "date": "2026-09-08",
@@ -2001,7 +2296,7 @@
       "notes": "QA interview."
     },
     {
-      "id": 17,
+      "id": "17",
       "candidateId": 24,
       "jobId": 11,
       "date": "2026-09-10",
@@ -2011,7 +2306,7 @@
       "notes": "Final technical writing interview."
     },
     {
-      "id": 18,
+      "id": "18",
       "candidateId": 25,
       "jobId": 1,
       "date": "2026-09-11",
@@ -2021,7 +2316,7 @@
       "notes": "Frontend interview."
     },
     {
-      "id": 19,
+      "id": "19",
       "candidateId": 27,
       "jobId": 3,
       "date": "2026-09-12",
@@ -2031,7 +2326,7 @@
       "notes": "Design interview."
     },
     {
-      "id": 20,
+      "id": "20",
       "candidateId": 30,
       "jobId": 6,
       "date": "2026-09-14",
@@ -2040,5 +2335,6 @@
       "status": "Scheduled",
       "notes": "QA interview."
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

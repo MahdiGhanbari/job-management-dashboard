@@ -4,6 +4,7 @@ import { getInterviews } from "./interviews"
 import { getJobs } from "./jobs"
 import { IStats } from "@/types/dashboard"
 import { resolve } from "path"
+import { interval } from "../utils"
 
 
 function getChanges(array: any[], field: string): number {
@@ -31,7 +32,7 @@ function calculateTimeToHire(candidates: ICandidate[]): number {
   
 
 export async function getStats():Promise<IStats> {
-    await new Promise((resolve)=> setTimeout(resolve, 3000))
+    await interval(3000)
     try {
         const [jobsList, candidatesList, interviewsList] = await Promise.all([
             getJobs(),
