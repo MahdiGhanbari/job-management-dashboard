@@ -2336,5 +2336,12 @@
       "notes": "QA interview."
     }
   ],
+  "jobTypes": [
+    { "value": "full-time", "label": "Full-time" },
+    { "value": "part-time", "label": "Part-time" },
+    { "value": "contract", "label": "Contract" },
+    { "value": "internship", "label": "Internship" },
+    { "value": "temporary", "label": "Temporary" }
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }

@@ -3,9 +3,10 @@ import { Field, FieldLabel } from "../ui/field";
 import { InputGroupAddon } from "../ui/input-group";
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "../ui/select";
 import clsx from "clsx";
+import { IListItem } from "@/types/common";
 
 interface Props {
-    items: { value: any, label: string }[],
+    items: Record<any, any>[],
     value: any,
     onValueChange: (value: any) => void,
     required?: boolean,
@@ -20,7 +21,7 @@ export default function SelectInput({items, value, onValueChange, required, labe
     return (
         <Field>
             <FieldLabel >{label} {required && <span className="text-destructive">*</span>}</FieldLabel>
-            <Select {...{items, value, name, required, onValueChange}}>
+            <Select {...{ value, name, required, onValueChange}}>
                 
                 <SelectTrigger className={clsx("w-full max-w-48", {'pl-0': innerLeftIcon})}>
                     <SelectValue placeholder={placeholder} />

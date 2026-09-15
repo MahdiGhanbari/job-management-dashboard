@@ -3,8 +3,8 @@ import { getCandidates } from "./candidates"
 import { getInterviews } from "./interviews"
 import { getJobs } from "./jobs"
 import { IStats } from "@/types/dashboard"
-import { resolve } from "path"
 import { interval } from "../utils"
+import { updateTag } from "next/cache"
 
 
 function getChanges(array: any[], field: string): number {
@@ -61,6 +61,7 @@ export async function getStats():Promise<IStats> {
         }
 
     } catch(err) {
+        console.log(err)
         throw new Error("failed to calculate the dashboard")
     }
     

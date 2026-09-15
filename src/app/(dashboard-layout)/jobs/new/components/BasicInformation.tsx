@@ -17,11 +17,11 @@ import { createJob } from "@/app/actions/job"
 import { Button } from "@/components/ui/button"
 import clsx from "clsx"
 
-export default function BaseicInputs() {
+export default function BaseicInputs({jobTypes}:{jobTypes: Record<string,string>[]}) {
     const [departmentSelected, setDepartmentSelected] = useState<string | null>(null)
     const [locattionSelected, setLocattionSelectedd] = useState<string | null>(null)
     const [jobTypeSelected, setJobTypeSelected] = useState<string | null>(null)
-    const departments = [
+    const departments: Record<string, string>[] = [
         { value: "engineering", label: "Engineering" },
         { value: "product", label: "Product" },
         { value: "design", label: "Design" },
@@ -43,13 +43,8 @@ export default function BaseicInputs() {
         { value: "chicago", label: "Chicago, IL" },
     ];
 
-    const jobTypes = [
-        { value: "full-time", label: "Full-time" },
-        { value: "part-time", label: "Part-time" },
-        { value: "contract", label: "Contract" },
-        { value: "internship", label: "Internship" },
-        { value: "temporary", label: "Temporary" },
-    ];
+
+ 
     const [state, action, pending] = useActionState(createJob, { success: false, message: '' })
 
     return (
