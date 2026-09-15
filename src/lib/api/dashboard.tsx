@@ -33,6 +33,7 @@ function calculateTimeToHire(candidates: ICandidate[]): number {
 
 export async function getStats():Promise<IStats> {
     await interval(3000)
+
     try {
         const [jobsList, candidatesList, interviewsList] = await Promise.all([
             getJobs(),
