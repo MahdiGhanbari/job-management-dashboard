@@ -1,10 +1,13 @@
+import type { Metadata } from 'next';
 
 import { buttonVariants} from "@/components/ui/button"
-import { updateTag } from "next/cache";
-
 import Link from "next/link";
-
 import { FaPlus } from "react-icons/fa";
+
+export const metadata: Metadata = {
+  title: 'List of Jobs',
+  description: 'You cond search in all Jobs'
+};
 
 export default function Jobs() {
 

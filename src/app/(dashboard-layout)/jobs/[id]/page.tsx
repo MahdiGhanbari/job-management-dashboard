@@ -1,9 +1,37 @@
+import { getJobDetails } from "@/lib/api/jobs"
+import { Metadata } from "next"
 import { notFound } from "next/navigation"
+import { Suspense } from "react"
 
-export default async function Page({params}: {params: Promise<{id: string}>}) {
+type Props = {params: Promise<{id: string}>}
+
+export async function  generateMetadata({params}: Props): Promise<Metadata> {
     const {id} = await params
-    if(+id == 3 ) {
-        notFound()
+    const res = await getJobDetails(id)
+    if(res) {
+        return {
+            title: res.id + '',
+            description: res.description
+        }
     }
-    return <h1>{id}</h1>
+    return {}
+}
+
+export default async function Page({params}: Props) {
+    const {id} = await params
+  
+        const res = await getJobDetails(id)
+        if(!res) {
+            notFound()
+        }
+
+        return (
+            <Suspense fallback={<div>...</div>}>
+
+                <h1>{res.description}</h1>
+            </Suspense>
+        
+        )
+   
+    
 }
