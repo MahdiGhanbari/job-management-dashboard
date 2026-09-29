@@ -1,13 +1,14 @@
 import { ReactNode } from "react";
 import { Field, FieldLabel } from "../ui/field";
 import { InputGroupAddon } from "../ui/input-group";
-import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "../ui/select";
+import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from "../ui/select";
 import clsx from "clsx";
-import { IListItem } from "@/types/common";
 
 interface Props {
     items: Record<any, any>[],
     value: any,
+    titleField?: string,
+    valueField?: string,
     onValueChange: (value: any) => void,
     required?: boolean,
     label?: string
@@ -16,7 +17,7 @@ interface Props {
     name?: string
 }
 
-export default function SelectInput({items, value, onValueChange, required, label, placeholder, innerLeftIcon, name}: Props) {
+export default function SelectInput({items, value, onValueChange, required, label, placeholder, innerLeftIcon, name, titleField='label', valueField='value'}: Props) {
 
     return (
         <Field>
@@ -34,7 +35,7 @@ export default function SelectInput({items, value, onValueChange, required, labe
                     <SelectGroup>
                         {/* <SelectLabel>Fruits</SelectLabel> */}
                         {items.map((item) => (
-                            <SelectItem key={item.label} value={item.value}>
+                            <SelectItem key={item[titleField]} value={item[valueField]}>
                                 {item.label}
                             </SelectItem>
                         ))}

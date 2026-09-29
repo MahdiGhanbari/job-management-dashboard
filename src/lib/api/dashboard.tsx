@@ -4,7 +4,6 @@ import { getInterviews } from "./interviews"
 import { getJobs } from "./jobs"
 import { IStats } from "@/types/dashboard"
 import { interval } from "../utils"
-import { updateTag } from "next/cache"
 
 
 function getChanges(array: any[], field: string): number {
@@ -48,8 +47,8 @@ export async function getStats():Promise<IStats> {
                 changes: getChanges(candidatesList, 'appliedAt')
             },
             jobs: {
-                value: jobsList.length,
-                changes: getChanges(jobsList, 'postedAt')
+                value: jobsList.data.length,
+                changes: getChanges(jobsList.data, 'postedAt')
             },
             interviews: {
                 value: interviewsList.length,
@@ -62,7 +61,6 @@ export async function getStats():Promise<IStats> {
         }
 
     } catch(err) {
-        console.log(err)
         throw new Error("failed to calculate the dashboard")
     }
     

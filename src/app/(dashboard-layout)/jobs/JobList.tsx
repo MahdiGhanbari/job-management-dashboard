@@ -4,9 +4,29 @@ import Menu, { IMenuItem } from "@/components/common/Menu"
 import TableData, { ITableColumn } from "@/components/common/TableData"
 import { ReactNode } from "react"
 import { MoreHorizontalIcon } from "lucide-react"
+import { Paginate } from "@/components/common/Paginate"
+import { IListResponse, IQeury } from "@/lib/api/type"
+import { useRouter } from "next/navigation"
+import SelectInput from "@/components/common/SelectInput"
 
-export default function JobList({ data }: { data: IJob[] }) {
+export default function JobList({ data, searchParams }: { data: IListResponse<IJob>, searchParams: IQeury}) {
+    const {items} = data
+ 
+    const router = useRouter()
+    const page = searchParams.page ?? 1
+    const limit = searchParams.limit ?? 10
 
+    function onChangeFilter(qeury: IQeury) {
+
+        const params = new URLSearchParams(Object.entries(qeury))
+        router.push(`/jobs?${params}`)
+    }
+    function onChangePage(page: number) {
+      onChangeFilter({page, limit})
+    }
+    function onChangePrePage(limit: number ) {
+        onChangeFilter({page: 1, limit})
+    }
     function getActions(item: IJob): ReactNode {
         const items: (IMenuItem | null)[] = [
             { action: () => console.log('Edit' + item.title), title: "Edit" },
@@ -14,7 +34,6 @@ export default function JobList({ data }: { data: IJob[] }) {
             null,
             { action: () => console.log('Delete' + item.title), title: "Delete", variant: 'destructive' }
         ]
-        console.log(item.title)
         return (<Menu items={items}>
                 <MoreHorizontalIcon />
             </Menu>)
@@ -29,10 +48,19 @@ export default function JobList({ data }: { data: IJob[] }) {
         { title: 'Actions', handler: getActions },
     ]
 
+    const perPageItems = [
+        {label: '5', value: 5},
+        {label: '10', value: 10},
+        {label: '100', value: 100}
+    ]
+
 
     return (
-        <div className="rounded-lg border border-gray-200 overflow-hidden">
-            <TableData data={data} columns={columns} />
-        </div>
+       
+            <TableData data={data.data} columns={columns} 
+            pagination={<Paginate className="mt-4" totalItems={items} currentPage={+page} perPage={+limit} onPageChange={onChangePage}/> }
+            perPage={<SelectInput value={perPageItems[1]} items={perPageItems} onValueChange={onChangePrePage}/>}
+            />
+ 
     )
 }

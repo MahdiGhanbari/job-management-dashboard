@@ -5,14 +5,21 @@ import Link from "next/link";
 import { FaPlus } from "react-icons/fa";
 import JobList from './JobList';
 import { getJobs } from '@/lib/api/jobs';
+import { IQeury } from '@/lib/api/type';
+
 
 export const metadata: Metadata = {
   title: 'List of Jobs',
   description: 'You cond search in all Jobs'
 };
 
-export default async function Jobs() {
-  const jobs = await getJobs()
+interface Props {
+  searchParams: Promise<IQeury>
+}
+
+export default async function Jobs({searchParams}: Props) {
+  const params = await searchParams
+  const jobs = await getJobs(params)
 
   return <div>
     <div className="flex items-center justify-between pb-6">
@@ -23,8 +30,7 @@ export default async function Jobs() {
         </Link>
     </div>
         
-    <JobList data={jobs}/>
+    <JobList data={jobs} searchParams={params}/>
         
-
   </div>;
 }
