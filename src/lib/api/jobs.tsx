@@ -16,8 +16,8 @@ export async function getJobs(params?: IJobFilter): Promise<IListResponse<IJob>>
                 queryString.set(`${field}:contains`,  String(params[(field as keyof IJobFilter)]))
             }
         })
-        queryString.set('_page', String(params?.page))
-        queryString.set('_per_page',  String(params.limit))
+        queryString.set('_page', String(params?.page || 1))
+        queryString.set('_per_page',  String(params.limit || 10))
         
     }
     console.log(queryString.toString())

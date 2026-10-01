@@ -75,12 +75,10 @@ export default function JobList({ data, searchParams }: { data: IListResponse<IJ
 
 
     return (
-
             <TableData data={data.data} columns={columns} className="mt-4"
             pagination={<Paginate className="mt-4" totalItems={items} currentPage={+page} perPage={+limit} onPageChange={onChangePage}/> }
             perPage={<SelectInput value={limit} items={perPageItems} onValueChange={onChangeLimit}/>}
             />
-  
- 
+   
     )
 }
