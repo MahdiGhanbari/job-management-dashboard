@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
-
 import { buttonVariants} from "@/components/ui/button"
 import Link from "next/link";
 import { FaPlus } from "react-icons/fa";
 import JobList from './JobList';
-import { getJobs } from '@/lib/api/jobs';
-import { IQeury } from '@/lib/api/type';
+import { getJobs, getStaticData } from '@/lib/api/jobs';
+import JobFilter from './JobFilter';
+import { IJobFilter } from '@/types/job';
 
 
 export const metadata: Metadata = {
@@ -14,12 +14,18 @@ export const metadata: Metadata = {
 };
 
 interface Props {
-  searchParams: Promise<IQeury>
+  searchParams: Promise<IJobFilter>
 }
 
 export default async function Jobs({searchParams}: Props) {
   const params = await searchParams
   const jobs = await getJobs(params)
+  const [jobTypes, locations, departments, statuses] = await Promise.all([
+    getStaticData('jobTypes'),
+    getStaticData('locations'),
+    getStaticData('departments'),
+    getStaticData('statuses')
+  ])
 
   return <div>
     <div className="flex items-center justify-between pb-6">
@@ -29,7 +35,7 @@ export default async function Jobs({searchParams}: Props) {
           <span>Create New Job</span>
         </Link>
     </div>
-        
+    <JobFilter searchParams={params} {...{jobTypes, locations, departments, statuses}} />
     <JobList data={jobs} searchParams={params}/>
         
   </div>;

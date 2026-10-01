@@ -1,4 +1,18 @@
-export interface IListItem<K,V> {
+export interface IListItem<K, V> {
     lable: K,
-    value:  V
+    value: V
+}
+
+export interface IQeury {
+    page?: number
+    limit?: number
+}
+export interface IListResponse<T> {
+    first: number,
+    prev: number,
+    next: number,
+    last: number,
+    pages: number,
+    items: number,
+    data: T[]
 }

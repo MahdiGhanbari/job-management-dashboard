@@ -2,6 +2,7 @@
 
 import { ReactNode, useState } from "react"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "../ui/table"
+import clsx from "clsx"
 
 export interface ITableColumn<T> {
     title: string,
@@ -13,10 +14,13 @@ interface Props<T> {
     data: T[],
     columns: ITableColumn<T>[],
     pagination?: ReactNode
-    perPage?: ReactNode
+    perPage?: ReactNode,
+    minHeight?: string | number
+    maxHeight?: string | number
+    className?: string
 }
 
-export default function TableData<T>({ data, columns, pagination, perPage }: Props<T>) {
+export default function TableData<T>({ data, columns, pagination, perPage, minHeight=300, maxHeight=600, className }: Props<T>) {
     let body: ReactNode = <span>no data</span>
     if(data) {
         body =  data.map((item, index) => {
@@ -41,7 +45,7 @@ export default function TableData<T>({ data, columns, pagination, perPage }: Pro
    
     return (
         <div>
-            <div className="rounded-lg border border-gray-200 overflow-hidden">
+            <div className={clsx("rounded-lg border border-gray-200 overflow-hidden ", className)}>
                 <Table>
                     <TableHeader className="bg-gray-100">
                         <TableRow>
@@ -50,7 +54,7 @@ export default function TableData<T>({ data, columns, pagination, perPage }: Pro
                             })}
                         </TableRow>
                     </TableHeader>
-                    <TableBody>
+                    <TableBody className="overflow-scroll"  style={{"minHeight": minHeight+'px', "maxHeight": maxHeight+'px'}}>
                         {body}
                     </TableBody>
                 </Table>
