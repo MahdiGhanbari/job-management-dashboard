@@ -1,10 +1,15 @@
+import { IQeury } from "./common";
+
+export interface IJobFilter extends IQeury, Partial<IJob> {}
+export type JopStatus = "Active" | "Closed" | "Draft"
+
 export interface IJob {
     id?: number;
     title: string;
     department: string;
     location: string;
     jobType: "Full-time" | "Part-time" | "Contract" | string;
-    status: "Active" | "Closed" | "Draft";
+    status: JopStatus
     postedAt: string;
   }
   

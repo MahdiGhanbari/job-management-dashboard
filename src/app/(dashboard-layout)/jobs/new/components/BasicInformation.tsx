@@ -17,32 +17,16 @@ import { createJob } from "@/app/actions/job"
 import { Button } from "@/components/ui/button"
 import clsx from "clsx"
 
-export default function BaseicInputs({jobTypes}:{jobTypes: Record<string,string>[]}) {
+interface Props {
+    jobTypes: Record<string,string>[],
+    departments: Record<string,string>[],
+    locations: Record<string,string>[],
+}
+
+export default function BaseicInputs({jobTypes, departments, locations}:Props) {
     const [departmentSelected, setDepartmentSelected] = useState<string | null>(null)
     const [locattionSelected, setLocattionSelectedd] = useState<string | null>(null)
     const [jobTypeSelected, setJobTypeSelected] = useState<string | null>(null)
-    const departments: Record<string, string>[] = [
-        { value: "engineering", label: "Engineering" },
-        { value: "product", label: "Product" },
-        { value: "design", label: "Design" },
-        { value: "marketing", label: "Marketing" },
-        { value: "sales", label: "Sales" },
-        { value: "human-resources", label: "Human Resources" },
-        { value: "finance", label: "Finance" },
-        { value: "customer-support", label: "Customer Support" },
-        { value: "operations", label: "Operations" },
-    ];
-
-    const locations = [
-        { value: "remote", label: "Remote" },
-        { value: "new-york", label: "New York, NY" },
-        { value: "san-francisco", label: "San Francisco, CA" },
-        { value: "austin", label: "Austin, TX" },
-        { value: "seattle", label: "Seattle, WA" },
-        { value: "boston", label: "Boston, MA" },
-        { value: "chicago", label: "Chicago, IL" },
-    ];
-
 
  
     const [state, action, pending] = useActionState(createJob, { success: false, message: '' })
