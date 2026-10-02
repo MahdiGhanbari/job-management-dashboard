@@ -11,6 +11,7 @@ import SelectInput from "@/components/common/SelectInput"
 import { IListResponse } from "@/types/common"
 import { Badge } from "@/components/ui/badge"
 import clsx from "clsx"
+import Link from "next/link"
 
 export default function JobList({ data, searchParams }: { data: IListResponse<IJob>, searchParams: IJobFilter}) {
     const {items} = data
@@ -37,7 +38,7 @@ export default function JobList({ data, searchParams }: { data: IListResponse<IJ
     function getActions(item: IJob): ReactNode {
         const items: (IMenuItem | null)[] = [
             { action: () => console.log('Edit' + item.title), title: "Edit" },
-            { action: () => console.log('Duplicate' + item.title), title: "Duplicate" },
+            {handler: ()=> <Link href={'/jobs/'+ item.id}>Details</Link>},
             null,
             { action: () => console.log('Delete' + item.title), title: "Delete", variant: 'destructive' }
         ]
