@@ -28,7 +28,7 @@ export default async function Jobs({ searchParams }: Props) {
   ])
 
   return <div>
-    <div className="flex items-center justify-between pb-6">
+    <div className="flex items-center justify-between mb-6">
       <h3 className="font-bold text-xl">Jobs</h3>
 
       <Link href="/jobs/new" className={buttonVariants({ size: 'lg' })}>

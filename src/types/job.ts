@@ -1,10 +1,17 @@
 import { IQeury } from "./common";
 
-export interface IJobFilter extends IQeury, Partial<IJob> {}
 export type JopStatus = "Active" | "Closed" | "Draft"
+export interface IJobFilter extends IQeury, Partial<IJob> {}
+export interface IJobPipeline {
+  applied: number;
+  screening: number;
+  interview: number;
+  offered: number;
+  hired: number;
+}
 
 export interface IJob {
-    id?: number;
+    id?: string;
     title: string;
     department: string;
     location: string;
@@ -14,24 +21,19 @@ export interface IJob {
   }
   
   export interface IJobDetails {
-    id?: number;
+    id?: string;
+    jobId?: string;
     description: string;
-    requirements: string[];
-    responsibilities?: string[];
-    experience: string;
-    salaryRange: string;
+    requirements: string;
+    responsibilities: string;
+    experience: number;
+    salary: number;
     deadline?: string;
     updatedAt?: string;
     createdBy?: string;
     notes?: string;
   
-    pipeline: {
-      applied: number;
-      screening: number;
-      interview: number;
-      offered: number;
-      hired: number;
-    };
+    pipeline: IJobPipeline;
   
     totalCandidates?: number;
     interviewsScheduled?: number;

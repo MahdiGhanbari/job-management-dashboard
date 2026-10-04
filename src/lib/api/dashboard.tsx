@@ -39,7 +39,6 @@ export async function getStats():Promise<IStats> {
             getCandidates(),
             getInterviews()
         ])
-
         
         return {
             candidates: {
@@ -47,7 +46,7 @@ export async function getStats():Promise<IStats> {
                 changes: getChanges(candidatesList, 'appliedAt')
             },
             jobs: {
-                value: jobsList.data.length,
+                value: jobsList.items,
                 changes: getChanges(jobsList.data, 'postedAt')
             },
             interviews: {
@@ -61,7 +60,7 @@ export async function getStats():Promise<IStats> {
         }
 
     } catch(err) {
-        throw new Error("failed to calculate the dashboard")
+        throw new Error("failed to calculate the dashboard:" + err)
     }
     
 }
