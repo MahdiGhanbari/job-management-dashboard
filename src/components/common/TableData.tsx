@@ -21,8 +21,13 @@ interface Props<T> {
 }
 
 export default function TableData<T>({ data, columns, pagination, perPage, minHeight=300, maxHeight=600, className }: Props<T>) {
-    let body: ReactNode = <span>no data</span>
-    if(data) {
+
+    let body: ReactNode = (
+        <TableRow>
+            <TableCell colSpan={columns.length} className="h-24 text-center"> No Data</TableCell>
+        </TableRow>
+    )
+    if(data && data.length) {
         body =  data.map((item, index) => {
             return (
                 <TableRow key={'row' + index}>

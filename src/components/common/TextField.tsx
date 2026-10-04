@@ -4,9 +4,25 @@ import { Field, FieldLabel } from "../ui/field"
 import { InputGroup, InputGroupAddon, InputGroupInput } from "../ui/input-group"
 import clsx from "clsx"
 
-interface Props { label?: string, placeholder?: string, innerLeftIcon?: React.ReactNode, required?: boolean, name?: string, className?: string, onChange?: (value: string) => void }
+export interface ITextInputProps {
+    value?: string | number,
+    label?: string,
+    placeholder?: string,
+    required?: boolean, 
+    name?: string,
+    className?: string,
+    onChange?: (value: string) => void
+}
 
-export default function TextField({ label, placeholder, innerLeftIcon, required, name, className, onChange = ()=>{} }: Props) {
+interface Props extends ITextInputProps {
+    innerLeftIcon?: React.ReactNode,
+    type?: string
+    min?: number | string
+    max?: number | string
+}
+
+
+export default function TextField({ value, label, placeholder, innerLeftIcon, required, name, className, type, min, max, onChange }: Props) {
     const id = useId()
     return (
         <Field className={clsx(className)}>
@@ -14,7 +30,7 @@ export default function TextField({ label, placeholder, innerLeftIcon, required,
                 {label} {required && <span className="text-destructive">*</span>}
             </FieldLabel>
             <InputGroup >
-                <InputGroupInput id={id} placeholder={placeholder} required={required} name={name} onChange={(e)=> onChange(e.target.value)}/>
+                <InputGroupInput {...{ id, name, placeholder, required, value, type , min, max}} onChange={(e) => onChange?.(e.target.value)} />
                 {
                     innerLeftIcon &&
                     <InputGroupAddon align="inline-start">

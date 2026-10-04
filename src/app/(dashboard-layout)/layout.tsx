@@ -11,7 +11,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
             <Suspense fallback={<div>...</div>}>
                 <Sidebar className="p-4 border-r border-gray-200 shadow-xs [grid-area:sidebar]" />
             </Suspense>
-            <main className="flex-1 p-6 [grid-area:content]">{children}</main>
+            <main className="flex-1 p-6 [grid-area:content] bg-indigo-50/40 overflow-auto">{children}</main>
         </div>
  
     );

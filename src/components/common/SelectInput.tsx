@@ -27,7 +27,7 @@ export default function SelectInput({ items, value, onValueChange, required, lab
             <FieldLabel >{label} {required && <span className="text-destructive">*</span>}</FieldLabel>
             <Select {...{ value, name, required, onValueChange }}>
 
-                <SelectTrigger onClick={(e)=> e.stopPropagation()} className={clsx("w-full max-w-48", { 'pl-0': innerLeftIcon || clearable })} >
+                <SelectTrigger onClick={(e)=> e.stopPropagation()} className={clsx("w-full", { 'pl-0': innerLeftIcon || clearable })} >
                     <SelectValue placeholder={placeholder} />
 
                     <InputGroupAddon align="inline-start">

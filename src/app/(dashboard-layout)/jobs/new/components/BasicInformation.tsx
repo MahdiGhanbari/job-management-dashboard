@@ -8,14 +8,10 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"
-import { Field, FieldError } from "@/components/ui/field"
-import { useActionState, useState } from "react"
-
-import { FaBriefcase, FaSpinner } from "react-icons/fa"
+import { Field } from "@/components/ui/field"
+import { useState } from "react"
+import { FaBriefcase } from "react-icons/fa"
 import { MdOutlineFactCheck } from "react-icons/md"
-import { createJob } from "@/app/actions/job"
-import { Button } from "@/components/ui/button"
-import clsx from "clsx"
 
 interface Props {
     jobTypes: Record<string,string>[],
@@ -28,13 +24,10 @@ export default function BaseicInputs({jobTypes, departments, locations}:Props) {
     const [locattionSelected, setLocattionSelectedd] = useState<string | null>(null)
     const [jobTypeSelected, setJobTypeSelected] = useState<string | null>(null)
 
- 
-    const [state, action, pending] = useActionState(createJob, { success: false, message: '' })
-
     return (
-        <form action={action}>
+   
 
-            <Card className="w-full max-w-sm select-none">
+            <Card className="w-full select-none">
                 <CardHeader>
                     <CardTitle className="flex items-center gap-2">
                         <MdOutlineFactCheck size="24" />
@@ -58,19 +51,9 @@ export default function BaseicInputs({jobTypes, departments, locations}:Props) {
                         </Field>
 
                     </Field>
-                    <Field>
-                        <Button type="submit" disabled={pending} >
-                            {pending && <FaSpinner className={clsx({ 'animate-spin': pending })} />}
-
-                            submit
-                        </Button>
-                        <FieldError>
-                            {state.message}
-                        </FieldError>
-                    </Field>
                 </CardContent>
 
             </Card>
-        </form>
+ 
     )
 }

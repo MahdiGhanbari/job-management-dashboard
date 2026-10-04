@@ -1,6 +1,6 @@
 import { FaPhoenixFramework, FaSearch } from "react-icons/fa";
 import { LuCircleUserRound } from "react-icons/lu";
-import { MdAdd, MdOutlineNotificationsNone } from "react-icons/md";
+import { MdOutlineNotificationsNone } from "react-icons/md";
 
 export default function Header({className}: {className?: string}) {
 

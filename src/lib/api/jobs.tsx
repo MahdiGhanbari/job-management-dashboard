@@ -10,17 +10,18 @@ type StaticType = 'jobTypes' | 'departments' | 'locations' | 'statuses'
 
 export async function getJobs(params?: IJobFilter): Promise<IListResponse<IJob>> {
     const queryString = new URLSearchParams()
+    queryString.set('_per_page',  String(params?.limit || 1000))
+    queryString.set('_page', String(params?.page || 1))
     if(params) {
+
         Object.keys(params).forEach((field) => {
             if(!['page', 'limit'].includes(field)){
                 queryString.set(`${field}:contains`,  String(params[(field as keyof IJobFilter)]))
             }
         })
-        queryString.set('_page', String(params?.page))
-        queryString.set('_per_page',  String(params.limit))
         
     }
-    console.log(queryString.toString())
+
     const res = await fetch(`${API_URL}/jobs?${queryString.toString()}`)
 
     if(!res.ok) {
@@ -29,7 +30,7 @@ export async function getJobs(params?: IJobFilter): Promise<IListResponse<IJob>>
     return res.json()
 }
 
-export async function addJob(data: IJob) {
+export async function addJob(data: IJob): Promise<IJob> {
     const res = await fetch(`${API_URL}/jobs`, {
         method: 'POST',
         headers: {
@@ -42,6 +43,22 @@ export async function addJob(data: IJob) {
     if(!res.ok) {
         throw new Error('Failed to create new job')
     }
+    return res.json()
+}
+
+export async function addJobDetails(data: IJobDetails): Promise<IJobDetails> {
+    const res = await fetch(`${API_URL}/jobDetails`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+        
+    })
+    if(!res.ok) {
+        throw new Error('Failed to create new Job Details')
+    }
+    return res.json()
 }
 
 export async function getStaticData(type: StaticType): Promise<Record<string, string>[]> {
