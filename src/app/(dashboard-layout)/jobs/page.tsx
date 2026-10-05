@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 import { FaPlus } from "react-icons/fa";
-import JobList from './JobList';
 import { getJobs, getStaticData } from '@/lib/api/jobs';
 import JobFilter from './JobFilter';
 import { IJobFilter } from '@/types/job';
 import { buttonVariants } from '@/components/ui/button';
 import Link from 'next/link';
+import JobTable from './JobTable';
 
 
 export const metadata: Metadata = {
@@ -19,7 +19,7 @@ interface Props {
 
 export default async function Jobs({ searchParams }: Props) {
   const params = await searchParams
-  const jobs = await getJobs(params)
+  const jobs = getJobs(params)
   const [jobTypes, locations, departments, statuses] = await Promise.all([
     getStaticData('jobTypes'),
     getStaticData('locations'),
@@ -38,7 +38,6 @@ export default async function Jobs({ searchParams }: Props) {
 
     </div>
     <JobFilter searchParams={params} {...{ jobTypes, locations, departments, statuses }} />
-    <JobList data={jobs} searchParams={params} />
-
-  </div>;
+    <JobTable data={jobs} />
+  </div>
 }

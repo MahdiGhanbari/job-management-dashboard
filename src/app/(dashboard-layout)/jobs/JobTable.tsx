@@ -1,40 +1,19 @@
 'use client'
 
-import { IJob, IJobFilter, JopStatus } from "@/types/job"
+import { IJob } from "@/types/job"
 import Menu, { IMenuItem } from "@/components/common/Menu"
-import TableData, { ITableColumn } from "@/components/common/TableData"
-import { ReactNode } from "react"
+import TableData, { ITableColumn, TableSkeleton } from "@/components/common/TableData"
+import { ReactNode, Suspense } from "react"
 import { MoreHorizontalIcon } from "lucide-react"
-import { Paginate } from "@/components/common/Paginate"
-import { useRouter } from "next/navigation"
-import SelectInput from "@/components/common/SelectInput"
-import { IListResponse } from "@/types/common"
 import { Badge } from "@/components/ui/badge"
 import clsx from "clsx"
 import Link from "next/link"
+import { IListResponse } from "@/types/common"
+import { Card, CardContent } from "@/components/ui/card"
 
-export default function JobList({ data, searchParams }: { data: IListResponse<IJob>, searchParams: IJobFilter}) {
-    const {items} = data
- 
-    const router = useRouter()
-    const page = searchParams.page || 1
-    const limit = searchParams.limit || 10
 
-    function reload(qeury: IJobFilter) {
-        const params = new URLSearchParams(Object.entries(qeury))
-        router.push(`/jobs?${params}`)
-    }
-    function onChangePage(page: number) {
-        const newParms = searchParams
-        newParms.page = page
-        reload(newParms)
-    }
-    function onChangeLimit(limit: number ) {
-        const newParms = searchParams
-        newParms.page = 1
-        newParms.limit = limit
-        reload(newParms)
-    }
+export default function JobTable({ data }: { data: Promise<IListResponse<IJob>>}) {
+   
     function getActions(item: IJob): ReactNode {
         const items: (IMenuItem | null)[] = [
             { action: () => console.log('Edit' + item.title), title: "Edit" },
@@ -68,18 +47,20 @@ export default function JobList({ data, searchParams }: { data: IListResponse<IJ
         { title: 'Actions', handler: getActions },
     ]
 
-    const perPageItems = [
+  
+    const perPageItems:Record<string, any>[] = [
         {label: '5', value: 5},
         {label: '10', value: 10},
         {label: '100', value: 100}
     ]
 
-
     return (
-            <TableData data={data.data} columns={columns} className="mt-4"
-            pagination={<Paginate className="mt-4" totalItems={items} currentPage={+page} perPage={+limit} onPageChange={onChangePage}/> }
-            perPage={<SelectInput value={limit} items={perPageItems} onValueChange={onChangeLimit}/>}
-            />
-   
+        <Card className="mt-4">
+            <CardContent>
+                <Suspense fallback={<TableSkeleton<IJob> columns={columns} rows={10}/>}>
+                    <TableData {...{data, perPageItems}} columns={columns} />  
+                </Suspense>
+            </CardContent>
+        </Card>
     )
 }
