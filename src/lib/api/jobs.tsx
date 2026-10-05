@@ -2,6 +2,7 @@ import { IListResponse } from "@/types/common"
 import  { IJob, IJobDetails, IJobFilter } from "@/types/job"
 import { cacheLife, cacheTag } from "next/cache"
 import { cache } from "react"
+import { interval } from "../utils"
 
 
 const API_URL = process.env.API_URL
@@ -9,6 +10,7 @@ type StaticType = 'jobTypes' | 'departments' | 'locations' | 'statuses'
 
 
 export async function getJobs(params?: IJobFilter): Promise<IListResponse<IJob>> {
+    await interval(1000)
     const queryString = new URLSearchParams()
     queryString.set('_per_page',  String(params?.limit || 1000))
     queryString.set('_page', String(params?.page || 1))

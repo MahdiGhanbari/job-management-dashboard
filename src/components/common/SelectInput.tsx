@@ -1,16 +1,15 @@
-import { MouseEvent, MouseEventHandler, ReactNode } from "react";
+import { ReactNode } from "react";
 import { Field, FieldLabel } from "../ui/field";
 import { InputGroupAddon } from "../ui/input-group";
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "../ui/select";
 import clsx from "clsx";
-import { MdOutlineClose } from "react-icons/md";
-import { Button } from "../ui/button";
 
-interface Props {
-    items: Record<any, any>[],
+
+interface Props<T> {
+    items: T[],
     value?: any,
-    titleField?: string,
-    valueField?: string,
+    titleField?: keyof T,
+    valueField?: keyof T,
     onValueChange?: (value: any) => void,
     required?: boolean,
     label?: string
@@ -18,12 +17,13 @@ interface Props {
     innerLeftIcon?: ReactNode,
     name?: string
     clearable?: boolean
+    className?: string
 }
 
-export default function SelectInput({ items, value, onValueChange, required, label, placeholder, innerLeftIcon, name, titleField = 'label', valueField = 'value', clearable }: Props) {
+export default function SelectInput<T extends Record<string, any>>({ items, value, onValueChange, required, label, placeholder, innerLeftIcon, name, titleField ='label' , valueField= 'value' , clearable, className }: Props<T>) {
 
     return (
-        <Field>
+        <Field className={className}>
             <FieldLabel >{label} {required && <span className="text-destructive">*</span>}</FieldLabel>
             <Select {...{ value, name, required, onValueChange }}>
 
@@ -40,11 +40,15 @@ export default function SelectInput({ items, value, onValueChange, required, lab
                     <SelectGroup>
                         {clearable && <SelectItem key="clear" value={''}>No Select</SelectItem> }
                         {clearable &&<SelectLabel>Items</SelectLabel>}
-                        {items.map((item) => (
-                            <SelectItem key={item[titleField]} value={item[valueField]}>
-                                {item.label}
+                        {items.map((item) => {
+                            const itemValue = item[valueField];
+                            const itemTitle = String(item[titleField]);
+                            return (
+                            <SelectItem key={itemValue} value={itemValue}>
+                                {itemTitle}
                             </SelectItem>
-                        ))}
+                            )}
+                        )}
                     </SelectGroup>
                 </SelectContent>
 

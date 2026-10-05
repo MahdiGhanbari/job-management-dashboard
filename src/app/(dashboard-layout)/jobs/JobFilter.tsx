@@ -5,6 +5,7 @@ import { IJobFilter } from "@/types/job"
 import { useRouter } from "next/navigation"
 import debounce from "debounce"
 import { useState } from "react"
+import { Card, CardContent } from "@/components/ui/card"
 
 
 interface Props {
@@ -46,12 +47,14 @@ export default function JobFilter({searchParams, jobTypes, departments, location
     const onChangeTitle = debounce((value) => onChangeFilter ('title', value), 1000)
     
     return (
-        <div className="flex justify-between gap-4">
-            <TextField value={title ?? ''} placeholder="Title" label="Title" onChange={(value)=> {setTitle(value); onChangeTitle(value)}}/>
-            <SelectInput value={department ?? ''} items={departments} label="Department" onValueChange={(value) => onChangeFilter ('department', value)} clearable/>
-            <SelectInput value={location ?? ''} items={locations} label="Location" onValueChange={(value) => onChangeFilter ('location', value)} clearable/>
-            <SelectInput value={jobType ?? ''}  items={jobTypes} label="Job Type" onValueChange={(value) => onChangeFilter ('jobType', value)} clearable/>
-            <SelectInput value={status ?? ''} items={ statuses} label="Status" onValueChange={(value) => onChangeFilter ('status', value)} clearable/>
-        </div>
+        <Card >
+            <CardContent className="flex justify-between gap-4">
+                <TextField value={title ?? ''} placeholder="Title" label="Title" onChange={(value)=> {setTitle(value); onChangeTitle(value)}}/>
+                <SelectInput value={department ?? ''} items={departments} label="Department" onValueChange={(value) => onChangeFilter ('department', value)} clearable/>
+                <SelectInput value={location ?? ''} items={locations} label="Location" onValueChange={(value) => onChangeFilter ('location', value)} clearable/>
+                <SelectInput value={jobType ?? ''}  items={jobTypes} label="Job Type" onValueChange={(value) => onChangeFilter ('jobType', value)} clearable/>
+                <SelectInput value={status ?? ''} items={ statuses} label="Status" onValueChange={(value) => onChangeFilter ('status', value)} clearable/>
+            </CardContent>
+        </Card>
     )
 }
