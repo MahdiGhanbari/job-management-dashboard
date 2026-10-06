@@ -3,28 +3,39 @@
 import { IJob } from "@/types/job"
 import Menu, { IMenuItem } from "@/components/common/Menu"
 import TableData, { ITableColumn, TableSkeleton } from "@/components/common/TableData"
-import { ReactNode, Suspense } from "react"
+import { ReactNode, Suspense, useState } from "react"
 import { MoreHorizontalIcon } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import clsx from "clsx"
 import Link from "next/link"
 import { IListResponse } from "@/types/common"
 import { Card, CardContent } from "@/components/ui/card"
+import { ConfrimDialog } from "@/components/common/ConfirmDialog"
+import { removeJob } from "@/app/actions/job"
 
 
 export default function JobTable({ data }: { data: Promise<IListResponse<IJob>>}) {
+    const [deleteId, setDeleteId] = useState<String|undefined>()
    
     function getActions(item: IJob): ReactNode {
         const items: (IMenuItem | null)[] = [
             { action: () => console.log('Edit' + item.title), title: "Edit" },
             {handler: ()=> <Link href={'/jobs/'+ item.id}>Details</Link>},
             null,
-            { action: () => console.log('Delete' + item.title), title: "Delete", variant: 'destructive' }
+            { action: () => setDeleteId(item.id), title: "Delete", variant: 'destructive' }
         ]
         return (<Menu items={items}>
                 <MoreHorizontalIcon />
             </Menu>)
 
+    }
+
+    async function onDeleteItem() {
+        if(deleteId) {
+            const res = await removeJob(deleteId)
+            console.log(res)
+        }
+        setDeleteId('')
     }
 
     function statusHandler(item: IJob):ReactNode {
@@ -56,6 +67,8 @@ export default function JobTable({ data }: { data: Promise<IListResponse<IJob>>}
 
     return (
         <Card className="mt-4">
+            <ConfrimDialog open={!!deleteId}  title="Delete Job" description="Are you sure delete the job?" variant="Warnning"
+             onCancel={()=>setDeleteId('')} onAccept={()=> onDeleteItem()}/>
             <CardContent>
                 <Suspense fallback={<TableSkeleton<IJob> columns={columns} rows={10}/>}>
                     <TableData {...{data, perPageItems}} columns={columns} />  

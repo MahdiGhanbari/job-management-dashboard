@@ -12,10 +12,9 @@ type StaticType = 'jobTypes' | 'departments' | 'locations' | 'statuses'
 export async function getJobs(params?: IJobFilter): Promise<IListResponse<IJob>> {
     await interval(1000)
     const queryString = new URLSearchParams()
-    queryString.set('_per_page',  String(params?.limit || 1000))
-    queryString.set('_page', String(params?.page || 1))
     if(params) {
-
+        queryString.set('_per_page',  String(params?.limit || 5))
+        queryString.set('_page', String(params?.page || 1))
         Object.keys(params).forEach((field) => {
             if(!['page', 'limit'].includes(field)){
                 queryString.set(`${field}:contains`,  String(params[(field as keyof IJobFilter)]))
@@ -46,6 +45,17 @@ export async function addJob(data: IJob): Promise<IJob> {
         throw new Error('Failed to create new job')
     }
     return res.json()
+}
+
+export async function deleteJob(id: String): Promise<boolean> {
+    const res = await fetch(`${API_URL}/jobs/${id}`, {
+        method: 'DELETE', 
+    })
+
+    if(!res.ok) {
+        throw new Error('Failed to delete the job')
+    }
+    return true
 }
 
 export async function addJobDetails(data: IJobDetails): Promise<IJobDetails> {

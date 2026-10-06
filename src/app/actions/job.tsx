@@ -1,8 +1,9 @@
 'use server'
 
-import { addJob, addJobDetails } from "@/lib/api/jobs"
+import { addJob, addJobDetails, deleteJob } from "@/lib/api/jobs"
 import { interval } from "@/lib/utils"
 import { IJob, IJobDetails, IJobPipeline } from "@/types/job"
+import { revalidatePath } from "next/cache"
 import { redirect } from "next/navigation"
 
 type State = {success: boolean, message: string}
@@ -61,4 +62,15 @@ export async function  createJob(_prevState: State,  formData: FormData): Promis
         return {success: false, message: 'Job created failed'}
     }
     redirect('/jobs/' + jobDetailsRes.id)
+}
+
+export async function removeJob(id: String): Promise<State> {
+    try {
+        await deleteJob(id)
+        revalidatePath('/jobs')
+        return {message: 'Delete the job succesfully.', success: true}
+    } catch(err) {
+        return {message: String(err), success: false}
+    }
+    
 }
