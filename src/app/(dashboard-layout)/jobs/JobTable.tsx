@@ -12,6 +12,7 @@ import { IListResponse } from "@/types/common"
 import { Card, CardContent } from "@/components/ui/card"
 import { ConfrimDialog } from "@/components/common/ConfirmDialog"
 import { removeJob } from "@/app/actions/job"
+import { toast } from "sonner"
 
 
 export default function JobTable({ data }: { data: Promise<IListResponse<IJob>>}) {
@@ -33,7 +34,11 @@ export default function JobTable({ data }: { data: Promise<IListResponse<IJob>>}
     async function onDeleteItem() {
         if(deleteId) {
             const res = await removeJob(deleteId)
-            console.log(res)
+            if(res.success) {
+                toast.success(res.message)    
+            } else {
+                toast.error(res.message)
+            }
         }
         setDeleteId('')
     }

@@ -31,6 +31,7 @@ export async function getJobs(params?: IJobFilter): Promise<IListResponse<IJob>>
     return res.json()
 }
 
+
 export async function addJob(data: IJob): Promise<IJob> {
     const res = await fetch(`${API_URL}/jobs`, {
         method: 'POST',
@@ -58,6 +59,7 @@ export async function deleteJob(id: String): Promise<boolean> {
     return true
 }
 
+
 export async function addJobDetails(data: IJobDetails): Promise<IJobDetails> {
     const res = await fetch(`${API_URL}/jobDetails`, {
         method: 'POST',
@@ -73,6 +75,17 @@ export async function addJobDetails(data: IJobDetails): Promise<IJobDetails> {
     return res.json()
 }
 
+export async function deleteJobDetails(id: String): Promise<boolean> {
+    const res = await fetch(`${API_URL}/jobDetails/${id}`, {
+        method: 'DELETE', 
+    })
+
+    if(!res.ok) {
+        throw new Error('Failed to delete the job details')
+    }
+    return true
+}
+
 export async function getStaticData(type: StaticType): Promise<Record<string, string>[]> {
     'use cache'
     cacheTag(type)
@@ -85,15 +98,22 @@ export async function getStaticData(type: StaticType): Promise<Record<string, st
     return res.json()
 }
 
-
-export const getJobDetails = cache(async (id: string): Promise<IJobDetails | null> => {
-    const res = await fetch(`${API_URL}/jobDetails/${id}`)
-    if(res.status === 404) {
-        return null
-    }
+export async function getJob (id: String): Promise<IJob | null>  {
+    const res = await fetch(`${API_URL}/jobs/${id}`)
     if(!res.ok) {
-        throw new Error('Failed to fetch JobDetails')
+        throw new Error('Failed to fetch job')
     }
     return res.json()
+}
+
+
+export const getJobDetails = cache(async (id: String): Promise<IJobDetails | null> => {
+    const res = await fetch(`${API_URL}/jobDetails?jobId:eq=${id}`)
+    if(!res.ok ) {
+        throw new Error('Failed to fetch JobDetails')
+    }
+    const data: IJobDetails[] = await res.json()
+
+    return data[0] ?? null
 })
 
