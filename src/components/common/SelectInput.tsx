@@ -1,33 +1,33 @@
 import { ReactNode } from "react";
-import { Field, FieldLabel } from "../ui/field";
+import { Field, FieldError, FieldLabel } from "../ui/field";
 import { InputGroupAddon } from "../ui/input-group";
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "../ui/select";
 import clsx from "clsx";
+import { BaseInputProps } from "@/types/common";
 
 
-interface Props<T> {
+interface Props<T> extends BaseInputProps {
     items: T[],
-    value?: any,
     titleField?: keyof T,
     valueField?: keyof T,
-    onValueChange?: (value: any) => void,
-    required?: boolean,
-    label?: string
-    placeholder?: string,
     innerLeftIcon?: ReactNode,
-    name?: string
     clearable?: boolean
     className?: string
+    onValueChange?: (value: any) => void
 }
 
-export default function SelectInput<T extends Record<string, any>>({ items, value, onValueChange, required, label, placeholder, innerLeftIcon, name, titleField ='label' , valueField= 'value' , clearable, className }: Props<T>) {
-
+export default function SelectInput<T extends Record<string, any>>({ items, name, showRequired, onChange, onValueChange, required, error, label, placeholder, innerLeftIcon, titleField = 'label', valueField = 'value', clearable, className, ...props }: Props<T>) {
+    const isInvalid = !!error?.message
     return (
-        <Field className={className}>
-            <FieldLabel >{label} {required && <span className="text-destructive">*</span>}</FieldLabel>
-            <Select {...{ value, name, required, onValueChange }}>
+        <Field className={className} data-invalid={isInvalid}>
+            <FieldLabel >{label} {showRequired && <span className="text-destructive">*</span>}</FieldLabel>
+            <Select {...props} aria-invalid={isInvalid} onValueChange={(value) => {
+                onChange?.({ target: { value, name } })
+                onValueChange?.(value)
+            }
+            }>
 
-                <SelectTrigger onClick={(e)=> e.stopPropagation()} className={clsx("w-full", { 'pl-0': innerLeftIcon || clearable })} >
+                <SelectTrigger onClick={(e) => e.stopPropagation()} className={clsx("w-full", { 'pl-0': innerLeftIcon || clearable })} >
                     <SelectValue placeholder={placeholder} />
 
                     <InputGroupAddon align="inline-start">
@@ -38,21 +38,25 @@ export default function SelectInput<T extends Record<string, any>>({ items, valu
 
                 <SelectContent alignItemWithTrigger>
                     <SelectGroup>
-                        {clearable && <SelectItem key="clear" value={''}>No Select</SelectItem> }
-                        {clearable &&<SelectLabel>Items</SelectLabel>}
+                        {clearable && <SelectItem key="clear" value={''}>No Select</SelectItem>}
+                        {clearable && <SelectLabel>Items</SelectLabel>}
                         {items.map((item) => {
                             const itemValue = item[valueField];
                             const itemTitle = String(item[titleField]);
                             return (
-                            <SelectItem key={itemValue} value={itemValue}>
-                                {itemTitle}
-                            </SelectItem>
-                            )}
+                                <SelectItem key={itemValue} value={itemValue}>
+                                    {itemTitle}
+                                </SelectItem>
+                            )
+                        }
                         )}
                     </SelectGroup>
                 </SelectContent>
 
             </Select>
+            <div className="min-h-5">
+                <FieldError errors={[error]} />
+            </div>
         </Field>
     )
 }

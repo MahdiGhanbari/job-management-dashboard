@@ -1,36 +1,28 @@
 
 import { useId } from "react"
-import { Field, FieldLabel } from "../ui/field"
+import { Field, FieldError, FieldLabel } from "../ui/field"
 import { InputGroup, InputGroupAddon, InputGroupInput } from "../ui/input-group"
 import clsx from "clsx"
+import { BaseInputProps } from "@/types/common"
 
-export interface ITextInputProps {
-    value?: string | number,
-    label?: string,
-    placeholder?: string,
-    required?: boolean, 
-    name?: string,
-    className?: string,
-    onChange?: (value: string) => void
-}
 
-interface Props extends ITextInputProps {
+interface Props extends BaseInputProps {
     innerLeftIcon?: React.ReactNode,
     type?: string
-    min?: number | string
-    max?: number | string
 }
 
 
-export default function TextField({ value, label, placeholder, innerLeftIcon, required, name, className, type, min, max, onChange }: Props) {
+export default function TextField({ error, label,  innerLeftIcon, showRequired, className, ...props }: Props) {
+
     const id = useId()
+    const isInvalid = !!error?.message
     return (
-        <Field className={clsx(className)}>
+        <Field className={clsx(className)} data-invalid={isInvalid}>
             <FieldLabel htmlFor={id}>
-                {label} {required && <span className="text-destructive">*</span>}
+                {label} {showRequired && <span className="text-destructive">*</span>}
             </FieldLabel>
             <InputGroup >
-                <InputGroupInput {...{ id, name, placeholder, required, value, type , min, max}} onChange={(e) => onChange?.(e.target.value)} />
+                <InputGroupInput {...props} />
                 {
                     innerLeftIcon &&
                     <InputGroupAddon align="inline-start">
@@ -38,6 +30,9 @@ export default function TextField({ value, label, placeholder, innerLeftIcon, re
                     </InputGroupAddon>
                 }
             </InputGroup>
+            <div className="min-h-5">
+                <FieldError errors={[error]}/>
+            </div>
         </Field>
     )
 }
