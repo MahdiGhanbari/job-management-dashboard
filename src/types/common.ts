@@ -19,11 +19,12 @@ export interface IListResponse<T> {
     data: T[]
 }
 
-export interface BaseInputProps extends Partial<UseFormRegisterReturn> {
+export interface BaseInputProps extends Partial<Omit<UseFormRegisterReturn, 'onChange'>> {
     value?: any
     label?: string
     placeholder?: string
     className?: string
     error?: FieldError
     showRequired?: boolean
+    onChange?: (value: any) => void
 }
