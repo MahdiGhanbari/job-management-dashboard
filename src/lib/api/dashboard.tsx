@@ -35,7 +35,7 @@ export async function getStats():Promise<IStats> {
 
     try {
         const [jobsList, candidatesList, interviewsList] = await Promise.all([
-            getJobs(),
+            getJobs({limit: 1000}),
             getCandidates(),
             getInterviews()
         ])
