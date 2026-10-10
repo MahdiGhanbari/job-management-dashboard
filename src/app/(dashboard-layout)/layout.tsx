@@ -1,18 +1,21 @@
-import Header from "@/components/Header";
-import Sidebar from "@/components/Sidebar";
-import { Suspense } from "react";
-
+import Breadcrumbs from '@/components/Breadcrumbs';
+import Header from '@/components/Header';
+import Sidebar from '@/components/Sidebar';
+import { Suspense } from 'react';
 
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
-    return (
-  
-        <div className="grid grid-cols-[16rem_1fr] grid-rows-[4rem_1fr] [grid-template-areas:'header_header''sidebar_content'] h-full" >
-            <Header className="px-6 py-4 border-b border-gray-200 shadow-xs [grid-area:header]" />
-            <Suspense fallback={<div>...</div>}>
-                <Sidebar className="p-4 border-r border-gray-200 shadow-xs [grid-area:sidebar]" />
-            </Suspense>
-            <main className="flex-1 p-6 [grid-area:content] bg-indigo-50/40 overflow-auto">{children}</main>
-        </div>
- 
-    );
+  return (
+    <div className="grid grid-cols-[16rem_1fr] grid-rows-[4rem_1fr] [grid-template-areas:'header_header''sidebar_content'] h-full">
+      <Header className="px-6 py-4 border-b border-gray-200 shadow-xs [grid-area:header]" />
+      <Suspense fallback={<div>...</div>}>
+        <Sidebar className="p-4 border-r border-gray-200 shadow-xs [grid-area:sidebar]" />
+      </Suspense>
+      <main className="flex-1 p-6 [grid-area:content] bg-indigo-50/40 overflow-auto">
+        <Suspense fallback={<div>...</div>}>
+          <Breadcrumbs className="mb-6" />
+        </Suspense>
+        {children}
+      </main>
+    </div>
+  );
 }

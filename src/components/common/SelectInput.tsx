@@ -22,7 +22,7 @@ export default function SelectInput<T extends Record<string, any>>({ items, name
         <Field className={className} data-invalid={isInvalid}>
             <FieldLabel >{label} {showRequired && <span className="text-destructive">*</span>}</FieldLabel>
             <Select {...props} aria-invalid={isInvalid} onValueChange={(value) => {
-                onChange?.({ target: { value, name } })
+                onChange?.(value )
                 onValueChange?.(value)
             }
             }>
