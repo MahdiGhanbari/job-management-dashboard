@@ -20,7 +20,7 @@ export default function JobTable({ data }: { data: Promise<IListResponse<IJob>>}
    
     function getActions(item: IJob): ReactNode {
         const items: (IMenuItem | null)[] = [
-            { action: () => console.log('Edit' + item.title), title: "Edit" },
+            {handler: ()=> <Link href={`/jobs/${item.id}/edit`}>Edit</Link>},
             {handler: ()=> <Link href={'/jobs/'+ item.id}>Details</Link>},
             null,
             { action: () => setDeleteId(item.id), title: "Delete", variant: 'destructive' }

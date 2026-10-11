@@ -1,4 +1,4 @@
-import { getJobDetails } from "@/lib/api/jobs"
+import { getJob } from "@/lib/api/jobs"
 import { ImageResponse } from 'next/og'
 type Props = { params: Promise<{ id: string }> }
 export const size = {
@@ -10,7 +10,7 @@ export const contentType = 'image/png'
 
 export default async function Image({ params }: Props) {
     const { id } = await params
-    const res = await getJobDetails(id)
+    const res = await getJob(id)
 
     return new ImageResponse(
         (

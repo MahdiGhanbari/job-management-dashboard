@@ -14,12 +14,12 @@ export const jobSchema = z.object({
     .trim()
     .min(10, "Description must be at least 10 characters")
     .max(200, "Description cannot exceed 200 characters"),
-  experience: z
-    .number({ error: "Experience is required" })
+  experience: z.coerce
+    .number<number>({ error: "Experience is required" })
     .min(1, "Experience must be at least 1 year")
     .max(20, "Experience cannot exceed 20 years"),
-  salary: z
-    .number({ error: "Salary is required" })
+  salary: z.coerce
+    .number<number>({ error: "Salary is required" })
     .min(1, "Salary must be greater than zero")
     .max(1_000_000_000, "Salary exceeds the maximum allowed"),
   requirements: z

@@ -1,5 +1,5 @@
 import { getStaticData } from "@/lib/api/jobs";
-import NewJobForm from "./components/NewJobForm";
+import JobForm from "../components/JobForm";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { IconType } from "react-icons";
 import { FaRegRectangleList } from "react-icons/fa6";
@@ -37,7 +37,7 @@ export default async function NewJob() {
             </div>
             <div className="flex gap-4">
                 <div className="flex-2">
-                    <NewJobForm {...{ jobTypes, locations, departments }} />
+                    <JobForm {...{ jobTypes, locations, departments }} />
                 </div>
                 <Card className="flex-1 p-4 bg-indigo-50/60">
                     <CardHeader>
