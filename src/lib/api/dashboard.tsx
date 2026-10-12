@@ -46,8 +46,8 @@ export async function getStats():Promise<IStats> {
                 changes: getChanges(candidatesList, 'appliedAt')
             },
             jobs: {
-                value: jobsList.items,
-                changes: getChanges(jobsList.data, 'postedAt')
+                value: jobsList?.items ?? 0,
+                changes: getChanges(jobsList?.data ?? [], 'postedAt')
             },
             interviews: {
                 value: interviewsList.length,
