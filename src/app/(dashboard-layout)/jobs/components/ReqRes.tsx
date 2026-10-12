@@ -22,6 +22,7 @@ export default function ReqRes() {
         </CardTitle>
         <CardDescription>Tell us what the candidate need and what they'll be doing.</CardDescription>
 
+        </CardHeader>
         <CardContent>
           <Field>
             <Field orientation="horizontal">
@@ -42,7 +43,6 @@ export default function ReqRes() {
             </Field>
           </Field>
         </CardContent>
-      </CardHeader>
     </Card>
   );
 }
