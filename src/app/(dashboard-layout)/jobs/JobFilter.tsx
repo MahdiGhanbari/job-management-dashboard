@@ -49,7 +49,7 @@ export default function JobFilter({searchParams, jobTypes, departments, location
     return (
         <Card >
             <CardContent className="flex justify-between gap-4">
-                <TextField value={title ?? ''} placeholder="Title" label="Title" onChange={(value)=> {setTitle(value); onChangeTitle(value)}}/>
+                <TextField value={title ?? ''} placeholder="Title" label="Title" onChange={({target:{value}})=> {setTitle(value); onChangeTitle(value)}}/>
                 <SelectInput value={department ?? ''} items={departments} label="Department" onValueChange={(value) => onChangeFilter ('department', value)} clearable/>
                 <SelectInput value={location ?? ''} items={locations} label="Location" onValueChange={(value) => onChangeFilter ('location', value)} clearable/>
                 <SelectInput value={jobType ?? ''}  items={jobTypes} label="Job Type" onValueChange={(value) => onChangeFilter ('jobType', value)} clearable/>

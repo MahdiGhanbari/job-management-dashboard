@@ -21,6 +21,7 @@ export default function JobDetails() {
     register,
     formState: { errors },
   } = useFormContext<JobFormValues>();
+
   return (
     <>
       <Card className="w-full select-none">

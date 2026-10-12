@@ -18,11 +18,6 @@ export interface IJob {
     jobType: "Full-time" | "Part-time" | "Contract" | string;
     status: JopStatus
     postedAt: string;
-  }
-  
-  export interface IJobDetails {
-    id?: string;
-    jobId?: string;
     description: string;
     requirements: string;
     responsibilities: string;
@@ -31,10 +26,7 @@ export interface IJob {
     deadline?: string;
     updatedAt?: string;
     createdBy?: string;
-    notes?: string;
-  
-    pipeline: IJobPipeline;
-  
+    pipeline?: IJobPipeline;
     totalCandidates?: number;
     interviewsScheduled?: number;
     timeToHire?: string;

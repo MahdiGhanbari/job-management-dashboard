@@ -1,5 +1,5 @@
 'use client';
-import { createJob } from '@/app/actions/job';
+import { createJob, editJob } from '@/app/actions/job';
 import { useActionState, useTransition } from 'react';
 import { Field, FieldError } from '@/components/ui/field';
 import { Button } from '@/components/ui/button';
@@ -16,23 +16,42 @@ import { JobFormValues, jobSchema } from '@/app/schemas/job.schema';
 import { zodResolver } from '@hookform/resolvers/zod';
 
 interface Props {
+  defaultValues?: JobFormValues;
   jobTypes: Record<string, string>[];
   departments: Record<string, string>[];
   locations: Record<string, string>[];
+  editMode?: boolean;
+  id?: string;
 }
 
-export default function NewJobForm({ jobTypes, departments, locations }: Props) {
+export default function JobForm({ id, defaultValues, jobTypes, departments, locations, editMode }: Props) {
   const methods = useForm<JobFormValues>({
     resolver: zodResolver(jobSchema),
+    defaultValues,
   });
+  const {
+    formState: { dirtyFields },
+  } = methods;
 
   const router = useRouter();
-  const [state, action, pending] = useActionState(createJob, { success: false, message: '' });
+  const serverFuncton = editMode ? editJob : createJob;
+  const [state, action, pending] = useActionState(serverFuncton, { success: false, message: '' });
   const [, startTransition] = useTransition();
 
   function onSubmit(data: JobFormValues) {
     const formData = new FormData();
-    Object.entries(data).forEach(([k, v]) => formData.append(k, String(v)));
+
+    // send only the changed fields
+    Object.keys(dirtyFields).forEach((key) => {
+      const field = key as keyof JobFormValues;
+      if (dirtyFields[field]) {
+        formData.set(field, String(data[field]));
+      }
+    });
+
+    if (editMode && id) {
+      formData.set('id', id);
+    }
     startTransition(() => action(formData));
   }
 
@@ -48,11 +67,10 @@ export default function NewJobForm({ jobTypes, departments, locations }: Props) 
             <Field orientation={'horizontal'} dir="rtl" className="space-between">
               <Button size={'lg'} type="submit" disabled={pending}>
                 {pending ? <FaSpinner className={clsx({ 'animate-spin': pending })} /> : <RiSendPlaneFill />}
-                Create Job
+                {editMode ? 'Save' : 'Create Job'} 
               </Button>
               <Button size={'lg'} variant={'outline'} onClick={() => router.back()}>
-                {' '}
-                Cancel{' '}
+                Cancel
               </Button>
             </Field>
             <Field>

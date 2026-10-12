@@ -1,19 +1,15 @@
-"use client";
-import SelectInput from "@/components/common/SelectInput";
-import TextField from "@/components/common/TextField";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Field } from "@/components/ui/field";
-import { useState } from "react";
-import { FaBriefcase } from "react-icons/fa";
-import { MdOutlineFactCheck } from "react-icons/md";
-import { useFormContext } from "react-hook-form";
-import { JobFormValues } from "@/app/schemas/job.schema";
+'use client';
+import SelectInput from '@/components/common/SelectInput';
+import TextField from '@/components/common/TextField';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Field } from '@/components/ui/field';
+import { useState } from 'react';
+import { MdOutlineFactCheck } from 'react-icons/md';
+import { useFormContext } from 'react-hook-form';
+import { JobFormValues } from '@/app/schemas/job.schema';
+import { PiBuildingOfficeBold } from 'react-icons/pi';
+import { IoLocationOutline } from 'react-icons/io5';
+import { LuBriefcaseBusiness } from 'react-icons/lu';
 
 interface Props {
   jobTypes: Record<string, string>[];
@@ -21,23 +17,16 @@ interface Props {
   locations: Record<string, string>[];
 }
 
-export default function BaseicInputs({
-  jobTypes,
-  departments,
-  locations,
-}: Props) {
-  const [departmentSelected, setDepartmentSelected] = useState<string | null>(
-    null,
-  );
-  const [locattionSelected, setLocattionSelectedd] = useState<string | null>(
-    null,
-  );
-  const [jobTypeSelected, setJobTypeSelected] = useState<string | null>(null);
-
+export default function BaseicInputs({ jobTypes, departments, locations }: Props) {
   const {
     register,
+    watch,
     formState: { errors },
   } = useFormContext<JobFormValues>();
+
+  const [departmentSelected, setDepartmentSelected] = useState(watch('department') ?? '');
+  const [locattionSelected, setLocattionSelectedd] = useState(watch('location') ?? '');
+  const [jobTypeSelected, setJobTypeSelected] = useState(watch('jobType') ?? '');
 
   return (
     <Card className="w-full select-none">
@@ -46,36 +35,34 @@ export default function BaseicInputs({
           <MdOutlineFactCheck size="24" />
           <span>Basic Information</span>
         </CardTitle>
-        <CardDescription>
-          Start with the essential details about the position
-        </CardDescription>
+        <CardDescription>Start with the essential details about the position</CardDescription>
       </CardHeader>
 
       <CardContent>
         <Field>
           <Field orientation="horizontal">
             <TextField
-              {...register("title")}
+              {...register('title')}
               error={errors.title}
               label="Job Title"
               placeholder="e.g Senior Frontend Developer"
-              innerLeftIcon={<FaBriefcase />}
+              innerLeftIcon={<LuBriefcaseBusiness />}
               showRequired
             />
             <SelectInput
-              {...register("department")}
+              {...register('department')}
               error={errors.department}
               label="Department"
               items={departments}
               value={departmentSelected}
               showRequired
               onValueChange={setDepartmentSelected}
-              innerLeftIcon={<FaBriefcase />}
+              innerLeftIcon={<PiBuildingOfficeBold />}
             />
           </Field>
           <Field orientation="horizontal">
             <SelectInput
-              {...register("location")}
+              {...register('location')}
               error={errors.location}
               label="Location"
               items={locations}
@@ -83,15 +70,16 @@ export default function BaseicInputs({
               onValueChange={setLocattionSelectedd}
               showRequired
               placeholder="e.g Tehran, Iran"
-              innerLeftIcon={<FaBriefcase />}
+              innerLeftIcon={<IoLocationOutline />}
             />
             <SelectInput
-              {...register("jobType")}
+              {...register('jobType')}
               error={errors.jobType}
               label="Job Type"
               items={jobTypes}
               value={jobTypeSelected}
               onValueChange={setJobTypeSelected}
+              innerLeftIcon={<LuBriefcaseBusiness />}
               showRequired
             />
           </Field>
