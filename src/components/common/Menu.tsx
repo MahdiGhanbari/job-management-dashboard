@@ -8,7 +8,7 @@ export interface IMenuItem {
     title?: string
     variant?: 'default' | 'destructive'
     action?: (arg?: any)=> void
-    handler?: () => ReactNode
+    customItem?: ReactNode
 }
 
 export default function Menu<T>({children, items}: {children: ReactNode, items: (IMenuItem | null)[]}) {
@@ -20,7 +20,7 @@ export default function Menu<T>({children, items}: {children: ReactNode, items: 
                 {items.map((item, index)=> {
                     if(item) {
                         return <DropdownMenuItem key={index} onClick={item.action} variant={item.variant}>
-                            {item.handler ? item.handler() : item.title}
+                            {item.customItem ? item.customItem  : item.title}
                             </DropdownMenuItem>
                     }
                     return <DropdownMenuSeparator key={'sperator' + index}></DropdownMenuSeparator>

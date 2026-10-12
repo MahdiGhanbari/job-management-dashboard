@@ -7,8 +7,7 @@ import { interval } from '../utils';
 const API_URL = process.env.API_URL;
 type StaticType = 'jobTypes' | 'departments' | 'locations' | 'statuses';
 
-export async function getJobs(params?: IJobFilter): Promise<IListResponse<IJob>> {
-  await interval(1000);
+export async function getJobs(params?: IJobFilter): Promise<IListResponse<IJob> | null> {
   const queryString = new URLSearchParams();
   if (params) {
     queryString.set('_per_page', String(params?.limit || 5));
@@ -21,6 +20,9 @@ export async function getJobs(params?: IJobFilter): Promise<IListResponse<IJob>>
   }
 
   const res = await fetch(`${API_URL}/jobs?${queryString.toString()}`);
+  if (res.status === 404) {
+    return null;
+  }
 
   if (!res.ok) {
     throw new Error('Failed to fetch jobs');
@@ -51,7 +53,6 @@ export async function updateJob(id: string, data: Partial<IJob>): Promise<IJob> 
     },
     body: JSON.stringify(data),
   });
-
   if (!res.ok) {
     throw new Error('Failed to update the job');
   }
@@ -83,6 +84,11 @@ export async function getStaticData(type: StaticType): Promise<Record<string, st
 
 export const getJob = cache(async (id: String): Promise<IJob | null> => {
   const res = await fetch(`${API_URL}/jobs/${id}`);
+
+  if (res.status === 404) {
+    return null;
+  }
+
   if (!res.ok) {
     throw new Error('Failed to fetch job');
   }

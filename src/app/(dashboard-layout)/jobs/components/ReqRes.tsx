@@ -14,35 +14,35 @@ export default function ReqRes() {
   } = useFormContext<JobFormValues>();
 
   return (
-      <Card className="w-full select-none">
-        <CardHeader>
-          <CardTitle className="flex items-center gap-2">
-            <LuClipboardList size="24" />
-            <span>Requirements & Responsibilities</span>
-          </CardTitle>
-          <CardDescription>Tell us what the candidate need and what they'll be doing.</CardDescription>
+    <Card className="w-full select-none">
+      <CardHeader>
+        <CardTitle className="flex items-center gap-2">
+          <LuClipboardList size="24" />
+          <span>Requirements & Responsibilities</span>
+        </CardTitle>
+        <CardDescription>Tell us what the candidate need and what they'll be doing.</CardDescription>
 
-          <CardContent>
-            <Field>
-              <Field orientation="horizontal">
-                <TextareaField
-                  {...register('requirements')}
-                  error={errors.requirements}
-                  label="Requirements"
-                  placeholder="Add requirment(one per line)"
-                />
-              </Field>
-              <Field orientation="horizontal">
-                <TextareaField
-                  {...register('responsibilities')}
-                  error={errors.responsibilities}
-                  label="Responsibilities"
-                  placeholder="Add responsibility(one per line)"
-                />
-              </Field>
+        <CardContent>
+          <Field>
+            <Field orientation="horizontal">
+              <TextareaField
+                {...register('requirements')}
+                error={errors.requirements}
+                label="Requirements"
+                placeholder="Add requirment(one per line)"
+              />
             </Field>
-          </CardContent>
-        </CardHeader>
-      </Card>
+            <Field orientation="horizontal">
+              <TextareaField
+                {...register('responsibilities')}
+                error={errors.responsibilities}
+                label="Responsibilities"
+                placeholder="Add responsibility(one per line)"
+              />
+            </Field>
+          </Field>
+        </CardContent>
+      </CardHeader>
+    </Card>
   );
 }

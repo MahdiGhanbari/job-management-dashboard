@@ -3,7 +3,7 @@
 import { addJob, deleteJob, getJob, updateJob } from '@/lib/api/jobs';
 import { interval } from '@/lib/utils';
 import { IJob } from '@/types/job';
-import { revalidatePath } from 'next/cache';
+import { revalidatePath, updateTag } from 'next/cache';
 import { redirect } from 'next/navigation';
 import { jobSchema } from '../schemas/job.schema';
 
@@ -30,7 +30,7 @@ export async function editJob(_prevState: State, formData: FormData): Promise<St
   } catch (err) {
     return { success: false, message: 'Somthing went wrong, try later.' };
   }
-
+  updateTag(`job-${id}`)
   redirect('/jobs/' + id);
 }
 

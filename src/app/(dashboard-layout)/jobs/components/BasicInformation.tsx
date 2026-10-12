@@ -4,10 +4,12 @@ import TextField from '@/components/common/TextField';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Field } from '@/components/ui/field';
 import { useState } from 'react';
-import { FaBriefcase } from 'react-icons/fa';
 import { MdOutlineFactCheck } from 'react-icons/md';
 import { useFormContext } from 'react-hook-form';
 import { JobFormValues } from '@/app/schemas/job.schema';
+import { PiBuildingOfficeBold } from 'react-icons/pi';
+import { IoLocationOutline } from 'react-icons/io5';
+import { LuBriefcaseBusiness } from 'react-icons/lu';
 
 interface Props {
   jobTypes: Record<string, string>[];
@@ -44,7 +46,7 @@ export default function BaseicInputs({ jobTypes, departments, locations }: Props
               error={errors.title}
               label="Job Title"
               placeholder="e.g Senior Frontend Developer"
-              innerLeftIcon={<FaBriefcase />}
+              innerLeftIcon={<LuBriefcaseBusiness />}
               showRequired
             />
             <SelectInput
@@ -55,7 +57,7 @@ export default function BaseicInputs({ jobTypes, departments, locations }: Props
               value={departmentSelected}
               showRequired
               onValueChange={setDepartmentSelected}
-              innerLeftIcon={<FaBriefcase />}
+              innerLeftIcon={<PiBuildingOfficeBold />}
             />
           </Field>
           <Field orientation="horizontal">
@@ -68,7 +70,7 @@ export default function BaseicInputs({ jobTypes, departments, locations }: Props
               onValueChange={setLocattionSelectedd}
               showRequired
               placeholder="e.g Tehran, Iran"
-              innerLeftIcon={<FaBriefcase />}
+              innerLeftIcon={<IoLocationOutline />}
             />
             <SelectInput
               {...register('jobType')}
@@ -77,6 +79,7 @@ export default function BaseicInputs({ jobTypes, departments, locations }: Props
               items={jobTypes}
               value={jobTypeSelected}
               onValueChange={setJobTypeSelected}
+              innerLeftIcon={<LuBriefcaseBusiness />}
               showRequired
             />
           </Field>

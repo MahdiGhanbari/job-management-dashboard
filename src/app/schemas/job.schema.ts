@@ -26,13 +26,13 @@ export const jobSchema = z.object({
     .string()
     .trim()
     .min(10, "At least 10 characters are required")
-    .max(100, "Maximum 100 characters allowed"),
+    .max(1000, "Maximum 1000 characters allowed"),
 
   responsibilities: z
     .string()
     .trim()
     .min(10, "At least 10 characters are required")
-    .max(100, "Maximum 100 characters allowed"),
+    .max(1000, "Maximum 1000 characters allowed"),
 });
 
 export type JobFormValues = z.infer<typeof jobSchema>;
