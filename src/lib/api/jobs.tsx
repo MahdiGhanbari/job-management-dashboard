@@ -2,7 +2,6 @@ import { IListResponse } from '@/types/common';
 import { IJob, IJobFilter } from '@/types/job';
 import { cacheLife, cacheTag } from 'next/cache';
 import { cache } from 'react';
-import { interval } from '../utils';
 
 const API_URL = process.env.API_URL;
 type StaticType = 'jobTypes' | 'departments' | 'locations' | 'statuses';

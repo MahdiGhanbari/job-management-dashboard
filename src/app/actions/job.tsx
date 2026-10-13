@@ -1,7 +1,6 @@
 'use server';
 
 import { addJob, deleteJob, getJob, updateJob } from '@/lib/api/jobs';
-import { interval } from '@/lib/utils';
 import { IJob } from '@/types/job';
 import { revalidatePath, updateTag } from 'next/cache';
 import { redirect } from 'next/navigation';
@@ -21,7 +20,6 @@ export async function editJob(_prevState: State, formData: FormData): Promise<St
     };
   }
 
-  await interval(3000);
   try {
     const jobRes = await updateJob(id, result.data);
     if (!jobRes) {
@@ -51,7 +49,6 @@ export async function createJob(_prevState: State, formData: FormData): Promise<
     status: 'Draft',
   };
 
-  await interval(3000);
   const jobRes = await addJob(newJob);
   if (!jobRes) {
     return { success: false, message: 'Job created failed' };

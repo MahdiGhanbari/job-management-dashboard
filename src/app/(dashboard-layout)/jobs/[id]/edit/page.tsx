@@ -10,12 +10,10 @@ import { IoTimeOutline } from 'react-icons/io5';
 import JobBannerItem from '../../components/JobBannerItem';
 import { cacheLife, cacheTag } from 'next/cache';
 import JobFormSkeleton from '../../components/JobFormSkeleton';
-import { interval } from '@/lib/utils';
 
 type Props = { params: Promise<{ id: string }> };
 
 async function Content({ params }: Props) {
-  await interval(3000)
   const { id } = await params;
   const data = await getJob(id);
   if (!data) {
