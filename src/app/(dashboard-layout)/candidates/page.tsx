@@ -1,3 +1,5 @@
+import ComingSoon from "@/components/common/ComingSoon";
+
 export default function Candidates() {
-  return <div>Candidates</div>;
+  return <ComingSoon title="The Candidates Page"/>;
 }

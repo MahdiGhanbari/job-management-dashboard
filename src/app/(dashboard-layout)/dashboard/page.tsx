@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 import StatsCard from "./components/stats/StatsCard";
 import StatsCardSkeleton from "./components/stats/StatsCardSkeleton";
+import ComingSoon from "@/components/common/ComingSoon";
 
 export default async function Dashboard() {
 
@@ -10,6 +11,7 @@ export default async function Dashboard() {
       <Suspense fallback={<StatsCardSkeleton/>}>
         <StatsCard/>
       </Suspense>
+      <ComingSoon title="This Section"/>
     </div>
 
   </>;
