@@ -1,7 +1,7 @@
-import Breadcrumbs from '@/components/Breadcrumbs';
-import Header from '@/components/Header';
-import Sidebar from '@/components/Sidebar';
-import { Suspense } from 'react';
+import Breadcrumbs from '@/components/Breadcrumbs'
+import Header from '@/components/Header'
+import Sidebar from '@/components/Sidebar'
+import { Suspense } from 'react'
 
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -17,5 +17,5 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
         {children}
       </main>
     </div>
-  );
+  )
 }

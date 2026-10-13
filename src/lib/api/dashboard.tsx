@@ -31,6 +31,7 @@ function calculateTimeToHire(candidates: ICandidate[]): number {
   
 
 export async function getStats():Promise<IStats> {
+    throw new Error('it is test')
     await interval(3000)
 
     try {

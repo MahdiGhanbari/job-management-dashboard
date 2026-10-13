@@ -42,8 +42,6 @@ export default function JobSkeleton() {
           <CardSkeleton rows={2} />
         </div>
       </div>
-
-      <span className="sr-only">Please wait...</span>
     </div>
   )
 }
